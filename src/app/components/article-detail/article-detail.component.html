@@ -1,0 +1,55 @@
+<div class="max-w-3xl mx-auto px-4 py-8">
+    <a routerLink="/" class="text-sm underline">← Retour</a>
+
+    <ng-container *ngIf="article; else notFound">
+        <h1 class="text-3xl font-semibold mt-3">{{ article.title }}</h1>
+        <p class="text-ink/50 mt-2 text-sm">{{ article.description }}</p>
+
+        <!-- Infos rapides -->
+        <div class="flex items-center text-sm text-ink gap-4 mt-2">
+            <span>{{ article.createdAt | date:'dd/MM/yyyy' }}</span>
+            <span>Auteur : {{ article.author }}</span>
+            <span>⏱ {{ article.readTime }}</span>
+        </div>
+
+        <!-- Tags -->
+        <div class="flex gap-2 mt-5">
+            <span *ngFor="let t of article.tags"
+                class="text-xs bg-mist px-2 py-1 rounded">{{ t }}</span>
+        </div>
+
+        <!-- Bannière image -->
+        <div class="mt-6">
+        <img *ngIf="article.cover" [src]="article.cover" [alt]="article.title" class="w-full h-72 object-cover rounded-lg shadow" />
+        </div>
+
+        <article class="prose max-w-none mt-6" [innerHTML]="article.content"></article>
+
+        <!-- Bouton retour en haut -->
+        <div class="mt-10 flex justify-center">
+            <button (click)="scrollTop()" class="w-12 h-12 rounded-full bg-white text-ink shadow-lg flex items-center justify-center text-xl hover:shadow-xl transition" aria-label="Revenir en haut">
+                ↑
+            </button>
+        </div>
+
+        <!-- Footer de l’article -->
+        <div *ngIf="article.links?.length" class="mt-10 border-t pt-6">
+            <h3 class="text-lg font-semibold mb-3">Quelques liens utiles</h3>
+            <ul class="list-disc list-inside space-y-2 text-blue-600">
+                <li *ngFor="let link of article.links">
+                <a [href]="link.url" target="_blank" rel="noopener noreferrer"
+                    class="hover:underline">
+                    {{ link.label }}
+                </a>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+
+    <ng-template #notFound>
+    <div class="p-6 border rounded-lg bg-paper mt-6">
+        <h2 class="text-xl font-semibold mb-2">Article introuvable</h2>
+        <p>L'ID ne correspond à aucun article.</p>
+    </div>
+    </ng-template>
+</div>

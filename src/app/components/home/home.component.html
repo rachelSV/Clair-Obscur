@@ -1,0 +1,70 @@
+<app-header></app-header>
+<app-hero-banner></app-hero-banner>
+
+<div class="max-w-6xl mx-auto grid grid-cols-12 gap-6 px-4">
+
+  <!-- Colonne principale : tes sections -->
+<main class="col-span-12 lg:col-span-9 space-y-8">
+  <!-- Section Dernier article -->
+  <section class="my-10">
+    <h2 class="text-2xl font-semibold mb-5">Dernier article</h2>
+
+    <article
+      class="rounded-xl overflow-hidden shadow-soft bg-white/90 flex flex-col transition hover:shadow-lg hover:-translate-y-1 duration-300"
+    >
+      <!-- Image de couverture -->
+      <img
+        *ngIf="articlesService.getLatest().cover"
+        [src]="articlesService.getLatest().cover"
+        [alt]="articlesService.getLatest().title"
+        class="h-56 w-full object-cover"
+      />
+
+      <!-- Contenu -->
+      <div class="p-6 flex flex-col">
+        <!-- Titre -->
+        <h3 class="text-2xl font-bold mb-2">
+          {{ articlesService.getLatest().title }}
+        </h3>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span
+            *ngFor="let t of articlesService.getLatest().tags"
+            class="text-xs bg-mist px-2 py-0.5 rounded"
+          >
+            {{ t }}
+          </span>
+        </div>
+
+        <!-- Auteur + Date -->
+        <div class="text-sm text-gray-500 mb-4">
+          <span>{{ articlesService.getLatest().createdAt | date:'dd/MM/yyyy' }}</span>
+          <span class="mx-2">•</span>
+          <span>Auteur : {{ articlesService.getLatest().author }}</span>
+        </div>
+
+        <!-- Bouton -->
+        <a
+          [routerLink]="['/articles', articlesService.getLatest().id]"
+          class="self-start px-5 py-2 bg-gold-500 text-ivory font-sans rounded-xl shadow-soft hover:bg-gold-600 transition"
+        >
+          Lire →
+        </a>
+      </div>
+    </article>
+  </section>
+
+
+    <!-- Section Liste des articles -->
+    <app-articles></app-articles>
+  </main>
+
+  <!-- Colonne du bandeau (desktop) -->
+  <aside class="hidden lg:block col-span-3 mt-10">
+    <app-infos-utiles></app-infos-utiles>
+  </aside>
+</div>
+
+<!-- Pour le mobile : le bouton rond + panneau coulissant est déjà inclus dans le composant -->
+<app-infos-utiles class="lg:hidden"></app-infos-utiles>
