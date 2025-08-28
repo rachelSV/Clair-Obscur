@@ -2,11 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ArticlesService } from '../articles/articles.service';
+import { ArticleRendererComponent } from '../articles/article-renderer/article-renderer.component';
+import { LikesButtonComponent } from '../like-button/likes-button.component';
 
 @Component({
   selector: 'app-article-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, ArticleRendererComponent, LikesButtonComponent],
   templateUrl: './article-detail.component.html',
   styleUrl: './article-detail.component.css'
 })

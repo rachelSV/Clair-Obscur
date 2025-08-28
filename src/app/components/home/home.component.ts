@@ -6,11 +6,12 @@ import { InfosUtilesComponent } from '../infos-utiles/infos-utiles.component';
 import { ArticlesComponent } from '../articles/articles.component';
 import { ArticlesService } from '../articles/articles.service';
 import { CommonModule } from '@angular/common';
+import { LikesButtonComponent } from '../like-button/likes-button.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HeroBannerComponent, InfosUtilesComponent, ArticlesComponent, RouterLink, CommonModule],
+  imports: [RouterOutlet, HeaderComponent, HeroBannerComponent, InfosUtilesComponent, ArticlesComponent, RouterLink, CommonModule, LikesButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -6,29 +6,36 @@
       *ngFor="let article of articles"
       class="rounded-xl overflow-hidden shadow-soft bg-white/90 flex flex-col transition hover:shadow-lg hover:-translate-y-1 duration-300"
     >
-      <!-- Image de couverture -->
-      <img
-        *ngIf="article.cover"
-        [src]="article.cover"
-        [alt]="article.title"
-        class="h-40 w-full object-cover"
-      />
+      <!-- Image de couverture + bouton like -->
+      <div class="relative">
+        <img
+          *ngIf="article.cover"
+          [src]="article.cover"
+          [alt]="article.title"
+          class="h-40 w-full object-cover"
+        />
+
+        <!-- Bouton like toujours visible -->
+        <div class="absolute top-2 right-2 bg-white/80 rounded-full shadow">
+          <app-likes-button
+            [articleId]="article.id"
+            size="sm"
+            [showCount]="false"
+          ></app-likes-button>
+        </div>
+      </div>
 
       <!-- Contenu texte -->
       <div class="flex flex-col flex-grow p-5">
         <h3 class="text-sm font-bold line-clamp-2">{{ article.title }}</h3>
-        <!-- <p class="text-gray-600 text-sm mt-2 line-clamp-3">
-          {{ article.content }}
-        </p> -->
         <span class="text-gray-500 text-sm mt-2">{{ article.createdAt | date:'dd/MM/yyyy' }}</span>
         <span class="text-gray-500 text-sm mt-2">Auteur : {{ article.author }}</span>
 
-        <!-- Tags + date -->
+        <!-- Tags -->
         <div class="flex flex-wrap gap-2 mt-3 text-xs text-ink">
           <span *ngFor="let t of article.tags" class="bg-mist px-2 py-0.5 rounded">
             {{ t }}
           </span>
-          
         </div>
 
         <!-- Bouton lire -->

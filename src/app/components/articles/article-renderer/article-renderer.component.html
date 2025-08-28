@@ -1,0 +1,55 @@
+<article class="prose max-w-none mt-6">
+  <ng-container *ngFor="let b of blocks; trackBy: trackByIndex">
+
+    <h1 *ngIf="b.type === 'h1'">{{ b.text }}</h1>
+    <h2 *ngIf="b.type === 'h2'">{{ b.text }}</h2>
+    <h3 *ngIf="b.type === 'h3'">{{ b.text }}</h3>
+
+    <p *ngIf="b.type === 'p'">{{ b.text }}</p>
+
+    <!-- Paragraphe riche : texte + em + strong + br, SANS innerHTML -->
+    <p *ngIf="b.type === 'rich-p'">
+        <ng-container *ngFor="let s of b.segments; trackBy: trackByIndex">
+            <ng-container *ngIf="s.type === 'text'">{{ s.text }}</ng-container>
+            <em *ngIf="s.type === 'em'">{{ s.text }}</em>
+            <strong *ngIf="s.type === 'strong'">{{ s.text }}</strong>
+            <br *ngIf="s.type === 'br'" />
+        </ng-container>
+    </p>
+
+    <blockquote *ngIf="b.type === 'quote'">
+      “{{ b.text }}”
+      <footer *ngIf="b.author" class="mt-1 text-sm">— {{ b.author }}</footer>
+    </blockquote>
+
+    <figure *ngIf="b.type === 'img'">
+      <img [src]="b.src" [alt]="b.alt || ''" class="rounded-lg" />
+      <figcaption *ngIf="b.caption" class="text-sm text-gray-500">{{ b.caption }}</figcaption>
+    </figure>
+
+    <ul *ngIf="b.type === 'ul'">
+      <li *ngFor="let it of b.items">{{ it }}</li>
+    </ul>
+
+    <ol *ngIf="b.type === 'ol'">
+      <li *ngFor="let it of b.items">{{ it }}</li>
+    </ol>
+
+    <hr *ngIf="b.type === 'hr'" />
+
+    <aside *ngIf="b.type === 'callout'" class="p-4 border-l-4 rounded-lg bg-yellow-50 border-yellow-300">
+      <strong *ngIf="b.title" class="block mb-1">{{ b.title }}</strong>
+      <span>{{ b.text }}</span>
+    </aside>
+
+    <pre *ngIf="b.type === 'code'"><code>{{ b.code }}</code></pre>
+
+    <div *ngIf="b.type === 'video'">
+      <video controls class="w-full rounded-lg">
+        <source [src]="b.src" type="video/mp4" />
+        {{ b.title || 'Votre navigateur ne supporte pas la vidéo.' }}
+      </video>
+    </div>
+
+  </ng-container>
+</article>

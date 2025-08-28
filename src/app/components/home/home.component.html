@@ -7,12 +7,13 @@
 <main class="col-span-12 lg:col-span-9 space-y-8">
   <!-- Section Dernier article -->
   <section class="my-10">
-    <h2 class="text-2xl font-semibold mb-5">Dernier article</h2>
+  <h2 class="text-2xl font-semibold mb-5">Dernier article</h2>
 
-    <article
-      class="rounded-xl overflow-hidden shadow-soft bg-white/90 flex flex-col transition hover:shadow-lg hover:-translate-y-1 duration-300"
-    >
-      <!-- Image de couverture -->
+  <article
+    class="rounded-xl overflow-hidden shadow-soft bg-white/90 flex flex-col transition hover:shadow-lg hover:-translate-y-1 duration-300"
+  >
+    <!-- Image de couverture -->
+    <div class="relative">
       <img
         *ngIf="articlesService.getLatest().cover"
         [src]="articlesService.getLatest().cover"
@@ -20,40 +21,50 @@
         class="h-56 w-full object-cover"
       />
 
-      <!-- Contenu -->
-      <div class="p-6 flex flex-col">
-        <!-- Titre -->
-        <h3 class="text-2xl font-bold mb-2">
-          {{ articlesService.getLatest().title }}
-        </h3>
-
-        <!-- Tags -->
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span
-            *ngFor="let t of articlesService.getLatest().tags"
-            class="text-xs bg-mist px-2 py-0.5 rounded"
-          >
-            {{ t }}
-          </span>
-        </div>
-
-        <!-- Auteur + Date -->
-        <div class="text-sm text-gray-500 mb-4">
-          <span>{{ articlesService.getLatest().createdAt | date:'dd/MM/yyyy' }}</span>
-          <span class="mx-2">•</span>
-          <span>Auteur : {{ articlesService.getLatest().author }}</span>
-        </div>
-
-        <!-- Bouton -->
-        <a
-          [routerLink]="['/articles', articlesService.getLatest().id]"
-          class="self-start px-5 py-2 bg-gold-500 text-ivory font-sans rounded-xl shadow-soft hover:bg-gold-600 transition"
-        >
-          Lire →
-        </a>
+      <!-- Bouton like positionné -->
+      <div class="absolute top-2 right-2 bg-white/80 rounded-full shadow">
+        <app-likes-button
+          [articleId]="articlesService.getLatest().id"
+          size="md"
+          [showCount]="false"
+        ></app-likes-button>
       </div>
-    </article>
-  </section>
+    </div>
+
+    <!-- Contenu -->
+    <div class="p-6 flex flex-col">
+      <!-- Titre -->
+      <h3 class="text-2xl font-bold mb-2">
+        {{ articlesService.getLatest().title }}
+      </h3>
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-3">
+        <span
+          *ngFor="let t of articlesService.getLatest().tags"
+          class="text-xs bg-mist px-2 py-0.5 rounded"
+        >
+          {{ t }}
+        </span>
+      </div>
+
+      <!-- Auteur + Date -->
+      <div class="text-sm text-gray-500 mb-4">
+        <span>{{ articlesService.getLatest().createdAt | date:'dd/MM/yyyy' }}</span>
+        <span class="mx-2">•</span>
+        <span>Auteur : {{ articlesService.getLatest().author }}</span>
+      </div>
+
+      <!-- Bouton Lire -->
+      <a
+        [routerLink]="['/articles', articlesService.getLatest().id]"
+        class="self-start px-5 py-2 bg-gold-500 text-ivory font-sans rounded-xl shadow-soft hover:bg-gold-600 transition"
+      >
+        Lire →
+      </a>
+    </div>
+  </article>
+</section>
 
 
     <!-- Section Liste des articles -->
