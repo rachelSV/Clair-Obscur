@@ -19,7 +19,7 @@ export class ArticlesService {
       title: 'Quand j’ai compris que j’étais dépendante affective (et comment je m’en suis sortie)',
       description: 'Je ne suis ni psychologue, ni médecin, ni thérapeuthe. Cet article est donc à unique but informatif, dans un esprit de partage et de témoignage personnel. Rien de ce qui est dit ici n\'est considéré comme une vérité absolue, comme une solution miracle ou thérapeuthique. Pour tous problèmes, quel qu\'en soit le sujet et la cause, n\'hésitez pas à consulter un professionnel. Il n\'y a pas de honte à demander de l\'aide.',
       tags: ['dépendance affective', 'relations', 'confiance en soi'],
-      readTime: '6 min',
+      readTime: '10 min',
       createdAt: new Date('2025-08-22'),
       author: 'Elijah',
       cover: 'assets/images/articles/dependance.webp',
@@ -36,7 +36,9 @@ export class ArticlesService {
           segments: [
             { type: 'text', text: 'On a tous déjà entendu ce mot barbare : “dépendance affective”. ' },
             { type: 'br' },
-            { type: 'text', text: 'Ça sonne presque comme une maladie mystérieuse, alors qu’en vrai, ça peut être juste… toi, moi, ton pote qui ne supporte pas que sa copine parte en week-end sans lui, ou ta cousine qui panique quand son téléphone reste silencieux trop longtemps.' },
+            { type: 'text', text: 'Ça sonne presque comme une maladie mystérieuse, alors qu’en vrai, ça peut être juste… toi, moi, ton pote ou ta cousine. Des gens qui ont du mal à vivre seuls, au point que ça impacte leur confort de vie et/ou leur autonomie.' },
+            { type: 'br' },
+            { type: 'text', text: 'Tout le monde peut être touché par une forme de dépendance. Et souvent, ça cache quelque chose de plus profond, de plus ancien.' },
           ],
         },
         {
@@ -51,6 +53,23 @@ export class ArticlesService {
             { type: 'text', text: 'Et si tu te reconnais dans ce que je vais raconter… c’est peut-être aussi ton cas.' },
           ],
         },
+        { type: 'h2', text: 'Petite précision' },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Je ne suis pas très fan du terme “dépendance affective”, à la base. Je trouve qu’il est un peu utilisé à tort et à travers récemment. Au détour de n’importe quelle discussion, on l’entend pour qualifier tout comportement jugé “anormal” dans un couple. Personnellement, je n’aime pas coller des étiquettes sans comprendre un minimum de quoi on parle, simplement car c’est devenu un mot à la mode dans le développement personnel.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Mon petit conseil (totalement personnel et hors avis professionnel) : Prenez le temps de faire la différence entre amour, sentiments, attachement, complicité, et dépendance maladive et privative. ' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Faire le choix d’annuler sa soirée entre amis car on décide de la passer en amoureux, ou avec sa maman, ou en tête à tête avec son / sa meilleure ami(e), c’est une chose. Se priver de la moindre activité ou du moindre confort car l’autre n’est pas là (et de surcroît lui en vouloir pour son absence), c’en est une autre.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Bref, revenons à nos moutons. ' },
+          ],
+        },
+
 
         { type: 'h2', text: 'Quand je croyais que “collée H24” = amour absolu' },
         {
@@ -147,6 +166,31 @@ export class ArticlesService {
             { type: 'text', text: 'Bref, j’étais en panique totale.' },
             { type: 'br' },
             { type: 'text', text: 'Je venais de passer dix ans collée à quelqu’un comme Voldemort greffé derrière la tête du professeur Quirrell. Et là, j’avais face à moi un mec qui me disait : “Spoiler alert : tu dois apprendre à vivre sans moi.”' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Je me questionnais : c’est si nul que ça de passer du temps en ma présence pour qu’il préfère sortir sans moi ?' },
+            { type: 'br' },
+            { type: 'text', text: 'Ce genre de pensées était du pain béni pour mon auto-dénigrement. Je n’étais jamais “assez” : si je l’avais été, il voudrait passer tout son temps avec moi. Et même là, je me serais sans doute dit que ce n’était pas suffisant.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Rien que de repenser à ces phrases, j’en ai encore des frissons.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Mais ce que je ne comprenais pas à l’époque, c’est qu’il ne “préférait” rien. Ce n’était même pas une question de préférence. Il avait simplement grandi en ayant le temps de se connaître, lui, en dehors des autres. Il aimait être avec moi, oui, mais il aimait aussi être avec ses amis, ou faire ses trucs en solo.' },
+            { type: 'br' },
+            { type: 'text', text: 'Moi, à l’inverse, je voulais toujours être avec mon conjoint : avec lui quand j’étais avec mes amis, avec lui en famille, avec lui partout, tout le temps.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'En fait, chez lui, sa vie se déclinait en plusieurs additions :' },
+            { type: 'br' },
+            { type: 'text', text: '- Vie + couple + amis + famille' },
+            { type: 'br' },
+            { type: 'text', text: 'Chez moi, c’était une équation unique :' },
+            { type: 'br' },
+            { type: 'text', text: '- Couple + amis + famille = vie' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Vous voyez la différence ? Dramatique.' },
           ],
         },
 
@@ -203,7 +247,16 @@ export class ArticlesService {
             { type: 'text', text: 'Et effectivement, ça collait parfaitement. J’avais, à ce moment-là, la nette impression de n’être importante, belle, intéressante, intelligente, qu’à travers les yeux de mon partenaire. ' },
             { type: 'br' },
             { type: 'br' },
-            { type: 'text', text: 'J’ai testé plein de choses pour m’en sortir :' },
+            { type: 'text', text: 'Mes 10 ans de relation avec mon ex avaient été tellement dévastateurs sur le plan personnel, je m’étais tellement perdue, que si on m’avait demandé à l’époque : “Qu’est-ce qu’il y a de bien chez toi ? Quelles sont tes qualités ?” … Je n’aurais même pas su quoi répondre. Pire encore, j’aurais sans doute tourné la tête vers lui pour qu’il réponde à ma place. Car dans le fond, qui étais-je vraiment, en dehors de mon rôle de conjointe ?' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Et me retrouver seule m’obligeait à affronter ces questions. Et franchement ? Ça me terrifiait.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Car si j’avais dit à la version de moi de 10 ans que je deviendrais comme ça en grandissant, cette gamine sûre d’elle avec son caractère bien trempé, ses convictions et son franc-parler, cette fillette qui préférait jouer seule qu’avec d’autres enfants stupides… elle m’aurait littéralement giflé.' },
+            { type: 'br' },
+            { type: 'br' },
+            { type: 'text', text: 'Bon, il fallait que je fasse quelque chose. Alors, j’ai testé plein de trucs pour m’en sortir :' },
           ],
         },
         { type: 'ul', items: [
@@ -216,7 +269,7 @@ export class ArticlesService {
         { type: 'h2', text: 'La mise en action' },
         {
           type: 'p',
-          text: 'J’ai alors commencé à pratiquer, un peu bêtement, un peu bancal, en copiant ce qu’il faisait et en essayant de comprendre comment y trouver du plaisir, seule. Parfois, c’était vraiment de ma propre initiative. Et parfois, c’était pour cacher une envie de vengeance. Comme pour lui dire silencieusement : “Tu vois, moi aussi je peux le faire. Moi aussi je peux vivre sans toi, tu ne m’es pas indispensable !”'
+          text: 'J’ai alors commencé à pratiquer, un peu bêtement, un peu bancal, en copiant ce qu’il faisait et en essayant de comprendre comment y trouver du plaisir, seule. Parfois, c’était vraiment de ma propre initiative. Je voulais vraiment le faire et guérir. Et parfois, c’était pour cacher une envie de vengeance. Comme pour lui dire silencieusement : “Tu vois, moi aussi je peux le faire. Moi aussi je peux vivre sans toi, tu ne m’es pas indispensable !”'
         },
         {
           type: 'rich-p',
@@ -315,7 +368,7 @@ export class ArticlesService {
         },
         {
           type: 'p',
-          text: 'Parles-en à ton partenaire. Explique lui, avec tes mots. “Je crois que j\'ai vraiment du mal à être seule, je suis peut-être dépendant(e), on peut en parler ?” '
+          text: 'Parles-en à ton/ta partenaire. Explique lui, avec tes mots. “Je crois que j\'ai vraiment du mal à être seul(e), je suis peut-être dépendant(e), on peut en parler ?” '
         },
         {
           type: 'p',
@@ -340,7 +393,7 @@ export class ArticlesService {
       title: 'Divorcer et se reconstruire : mon histoire',
       description: 'Cet article parle de mon expérience, de mon ressenti, de mon vécu, de ma manière d’avoir fait face à la séparation. A aucun moment, je sous-entends que c’est la chose à faire, ni que c’est facile, ni que c’est la solution miracle, et encore moins qu’il "faut" se séparer ou divorcer. Chacun prend son temps, à son rythme, et surtout chacun fait comme il peut. Si cet article vous inspire, fait écho, vous motive ou vous donne de la réflexion, c’est principalement à cela qu’il sert :)',
       tags: ['divorce', 'reconstruction', 'liberté'],
-      readTime: '7 min',
+      readTime: '8 min',
       createdAt: new Date('2025-08-28'),
       author: 'Elijah',
       cover: 'assets/images/articles/divorce.webp',

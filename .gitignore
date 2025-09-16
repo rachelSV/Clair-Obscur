@@ -40,3 +40,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+# ng build --base-href "/Clair-Obscur/"
+# npx angular-cli-ghpages --dir=dist/clair-obscur/browser
+# https://rachelsv.github.io/Clair-Obscur/
