@@ -1,64 +1,55 @@
-import { CommonModule } from '@angular/common';
-import { Component, computed, Input, OnInit, signal } from '@angular/core';
-import { LikesService } from './likes.service';
+import { Component, Input, OnInit, signal } from '@angular/core';
+
+const NAMESPACE = 'clairobscur'; // pas d'espace, pas de slash
 
 @Component({
   selector: 'app-likes-button',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './likes-button.component.html',
-  styleUrl: './likes-button.component.css'
 })
-export class LikesButtonComponent implements OnInit{
-  /** Identifiant unique de l'article (ex: a1) */
+export class LikesButtonComponent implements OnInit {
   @Input({ required: true }) articleId!: string;
-  /** Taille du bouton : 'sm' | 'md' | 'lg' */
-  @Input() size: 'sm' | 'md' | 'lg' = 'md';
-  /** Afficher le compteur */
-  @Input() showCount = true;
-  /** Compteur initial éventuel (provenant d'un backend), ignoré si déjà présent en localStorage */
-  @Input() initialCount: number | null = null;
 
-
-  // signals (Angular 16+)
-  liked = signal(false);
   count = signal(0);
+  liked = signal(false);
   busy = signal(false);
 
+  private counterName!: string; // nom du compteur côté API (safe)
 
-  constructor(private likes: LikesService) {}
+  ngOnInit() {
+    // Nom de compteur 100% alphanumérique pour éviter les refus
+    this.counterName = ('article' + String(this.articleId))
+      .replace(/[^A-Za-z0-9]/g, '')
+      .slice(0, 64); // garde court si jamais
 
-
-  ngOnInit(): void {
-    if (this.initialCount !== null && this.initialCount !== undefined) {
-    this.likes.initCountIfUnset(this.articleId, this.initialCount);
-    }
-    this.liked.set(this.likes.getLiked(this.articleId));
-    this.count.set(this.likes.getCount(this.articleId));
+    this.getCount();
   }
 
-
-  svgSize = computed(() => {
-    switch (this.size) {
-      case 'sm': return 18;
-      case 'md': return 22;
-      case 'lg': return 28;
-      default: return 22;
+  private async getCount() {
+    try {
+      const url = `https://api.counterapi.dev/v1/${NAMESPACE}/${this.counterName}`;
+      const res = await fetch(url, { method: 'GET' });
+      const data = await res.json();
+      this.count.set((data.value ?? data.count ?? 0) as number);
+    } catch {
+      // pas de throw : on reste silencieux en prod
     }
-  });
+  }
 
-
-  onToggle() {
-    if (this.busy()) return;
+  async onLike() {
+    if (this.liked() || this.busy()) return;
     this.busy.set(true);
-
-    // Ici on pourrait appeler un backend async; pour la démo, c'est instantané
-    const res = this.likes.toggle(this.articleId);
-    this.liked.set(res.liked);
-    this.count.set(res.count);
-
-
-    // petite pause pour éviter le spam et laisser l'anim se jouer
-    setTimeout(() => this.busy.set(false), 120);
+    try {
+      // V1 = GET sur /up (pas de POST)
+      const url = `https://api.counterapi.dev/v1/${NAMESPACE}/${this.counterName}/up`;
+      const res = await fetch(url, { method: 'GET' });
+      const data = await res.json();
+      this.count.set((data.value ?? data.count ?? 0) as number);
+      this.liked.set(true);
+    } catch {
+      // option: afficher un toast d’erreur
+    } finally {
+      this.busy.set(false);
+    }
   }
 }

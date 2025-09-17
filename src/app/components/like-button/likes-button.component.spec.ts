@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LikeButtonComponent } from './likes-button.component';
+import { LikesButtonComponent } from './likes-button.component';
 
-describe('LikeButtonComponent', () => {
-  let component: LikeButtonComponent;
-  let fixture: ComponentFixture<LikeButtonComponent>;
+describe('LikesButtonComponent', () => {
+  let component: LikesButtonComponent;
+  let fixture: ComponentFixture<LikesButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LikeButtonComponent]
+      imports: [LikesButtonComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LikeButtonComponent);
+    fixture = TestBed.createComponent(LikesButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

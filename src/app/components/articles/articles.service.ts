@@ -507,6 +507,7 @@ export class ArticlesService {
       title: 'Mon choix de ne pas avoir d’enfant. Ma ligature des trompes.',
       description: 'Le choix de faire une ligature n’est pas à prendre à la légère. Se faire ligaturer est un acte sérieux et irréversible. C’est une décision qui doit être mûrement réfléchie, discutée avec des professionnels, et prise en toute conscience. Cet article n’est pas un manifeste “anti-enfants”, il n’a pas pour but de faire la morale, de dénigrer la parentalité. Être parent est un choix tout aussi respectable que de ne pas l’être. Chacun fait ce qu’il veut. Cet article n’est qu’un récit personnel.',
       readTime: '8 min',
+      author: 'Elijah',
       tags: ['choix de vie', 'ligature', 'non-parentalité'],
       cover: 'assets/images/articles/enfant.webp',
       createdAt: new Date('2025-09-01'),

@@ -17,7 +17,7 @@ export class InfosUtilesComponent {
     { label: 'Centre d\'écoute "La porte ouverte" à Toulouse', href: 'https://www.la-porte-ouverte.fr/' },
     { label: 'Dispositif "Mon soutien Psy"', href: 'https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy' },
     { label: 'Violences Femmes Info • 3919', href: 'https://www.service-public.fr/cmi' },
-    { label: 'Enfance en danger • 119', href: 'https://allo119.gouv.fr' },
+    { label: 'Enfant en danger • 119', href: 'https://allo119.gouv.fr' },
   ];
 
   toggle() {

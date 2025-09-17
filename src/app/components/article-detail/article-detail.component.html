@@ -2,7 +2,8 @@
     <a routerLink="/" class="text-sm underline">← Retour</a>
 
     <ng-container *ngIf="article; else notFound">
-        <h1 class="text-3xl font-semibold mt-3">{{ article.title }} <app-likes-button [articleId]="article.id" size="md" [initialCount]="article.likes ?? 0"></app-likes-button></h1>
+        <h1 class="text-3xl font-semibold mt-3">{{ article.title }}</h1>
+        <!-- <app-likes-button [articleId]="article.id"></app-likes-button> -->
         
         <p class="text-ink/50 mt-2 text-sm">{{ article.description }}</p>
 
