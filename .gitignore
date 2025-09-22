@@ -45,3 +45,24 @@ Thumbs.db
 # ng build --base-href "/Clair-Obscur/"
 # npx angular-cli-ghpages --dir=dist/clair-obscur/browser
 # https://rachelsv.github.io/Clair-Obscur/
+
+# // Import the functions you need from the SDKs you need
+# import { initializeApp } from "firebase/app";
+# // TODO: Add SDKs for Firebase products that you want to use
+# // https://firebase.google.com/docs/web/setup#available-libraries
+
+# // Your web app's Firebase configuration
+# const firebaseConfig = {
+#   apiKey: "AIzaSyB2n_UYbxQ43wCdmZka2fyLGRsArv7h6XI",
+#   authDomain: "blog-clair-obscur.firebaseapp.com",
+#   projectId: "blog-clair-obscur",
+#   storageBucket: "blog-clair-obscur.firebasestorage.app",
+#   messagingSenderId: "1053648200324",
+#   appId: "1:1053648200324:web:260094b9e4b56c33e998d1"
+# };
+
+# // Initialize Firebase
+# const app = initializeApp(firebaseConfig);
+
+
+# J'EN SUIS A L'ETAPE 4 GPT Environnement

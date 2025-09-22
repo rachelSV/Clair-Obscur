@@ -632,6 +632,281 @@ export class ArticlesService {
         { type: 'p', text: 'Je répondrai simplement :' },
         { type: 'quote', text: 'Non. Parce que la seule vie que je veux élever, c’est la mienne.' }
       ]
+    },
+
+    {
+      id: 'a4',
+      title: 'La pression de devoir trouver un but dans sa vie, ou une passion',
+      description: 'A la différence des autres articles, qui étaient principalement des témoignages perso de mon propre vécu, celui-là est un peu plus basé sur des idées, des interrogations et des pistes de réflexion. Comme un gros sujet actuel et important que j’ai secoué comme un barman avec un shaker. Le but de cet article est de vous aider à penser, à vous questionner sur ces idées en les transposant à votre vie personnelle, à pratiquer l’introspection et la prise de recul.',
+      tags: ['réflexion', 'but', 'passion', 'société'],
+      author: 'Elijah',
+      readTime: '12 min',
+      cover: 'assets/images/articles/but.webp',
+      createdAt: new Date('2025-09-20'),
+      links: [
+        { label: 'MindDay - application d\'auto-thérapie', url: 'https://www.mindday.com/' },
+        { label: 'EuroNews - Article sur "l\'angoisse du sens de la vie"', url: 'https://fr.euronews.com/sante/2025/08/07/les-experts-expliquent-langoisse-du-sens-de-la-vie-et-comment-la-soulager' },
+        { label: 'Podcast "Métamorphose" - Le philosophe Bertrand Vergely sur le sens de la vie', url: 'https://www.metamorphosepodcast.com/podcast/notre-vie-a-un-sens-avec-le-philosophe-bertrand-vergely-535?utm_source=chatgpt.com' },
+        { label: 'L’art subtil de s’en foutre - Mark Manson', url: 'https://www.librairiesindependantes.com/product/9782212567595/' }
+      ],
+      blocks: [
+        
+        { type: 'h2', text: 'La pression de devoir trouver un but dans sa vie, ou une passion' },
+
+        { type: 'p', text: 'On ne s’en fout pas un peu, dans le fond ?' },
+        { type: 'p', text: 'Ah merde, je crois que c’était la phrase de fin ça.' },
+        { type: 'p', text: 'Reprenons.' },
+
+        { type: 'p', text: 'J’ai l’impression que, depuis toujours, j’entends les gens parler de passion, de but dans la vie. Comme si c’était la grande obligation de notre passage sur terre, ce culte de la "réussite" et de la "passion" qu’on voit partout.' },
+        { type: 'p', text: 'Comme si le fait de simplement exister n’était pas suffisant. Que c’était un gâchis de ne pas user de son temps pour s’adonner à une discipline passionnante.' },
+
+        { type: 'p', text: 'La pression sociale que ça engendre, comme si le fait de ne pas avoir de passion, de but dans la vie (ou de juste ne pas encore l’avoir trouvé, ou d’avoir changé d’avis en cours de route), était un échec total.' },
+
+        { type: 'p', text: 'J’ai beaucoup réfléchi à la question, aussi parce qu’elle m’obsède depuis que je suis toute petite. Et je vais essayer, au fil de cet article, d’apporter des pistes de réflexion pour, pourquoi pas, réussir à se détacher de cette image qu’être dans le flou, ne pas avoir de but précis, ne fait pas de nous des gens bizarres ou paumés.' },
+
+        { type: 'h2', text: 'Mêler but et passion' },
+
+        { type: 'p', text: 'J’ai décidé de faire corréler but et passion dans cet article. Car chaque réflexion faite sur un sujet m’amenait directement à l’autre, et inversement.' },
+        { type: 'p', text: 'Est-ce que le but d’une vie est de vivre de sa passion ? Ou est-ce simplement de vivre heureux ? Mais avoir une passion nous rend heureux…' },
+        { type: 'p', text: 'Bref, un méli mélo de pensées, que j’ai essayé de détailler au mieux.' },
+
+        { type: 'h3', text: 'Cultivez votre bizarrerie' },
+
+        { type: 'p', text: 'A ma dernière séance chez le psychologue, je lui expliquais avoir le sentiment que plusieurs de mes actions me rendaient hautaine. Que beaucoup de mes remarques et de mes réflexions allaient à contre-courant des attentes sociétales de réussites absolues et que le fait d’en parler ou de juste l’assumer me mettait souvent à l’écart, ou provoquait des regards de travers et des haussements de sourcils.' },
+
+        { type: 'p', text: 'Ce n’est pas rare que l’on se questionne tout au long de sa vie :' },
+
+        { type: 'ul', items: [
+          '"Je ne crois pas avoir envie de trouver un travail tout de suite, je vais peut-être rester un peu au chômage et me concentrer sur moi."',
+          '“Je n’ai plus envie de continuer mes études. Je vais peut-être regretter plus tard, mais je ne me sens plus aligné avec ce choix.”',
+          '“Je vais quitter mon CDI. Non, je n’ai pas vraiment de plan derrière mais on verra bien. J’en ai marre d’être dans cette entreprise.”',
+          '“Je n’arrive pas à savoir qui je suis, et je passe plusieurs heures par jour à essayer de me connaître.”'
+        ]},
+
+        { type: 'p', text: 'Mais ces phrases sont souvent suivies de jugements, même dissimulés.' },
+
+        { type: 'ul', items: [
+          '“Tu vas quitter ton CDI ? Mais comment tu vas faire ?”',
+          '“Tu arrêtes tes études maintenant ? Mais tu vas galérer hein, tu veux finir au McDo ?”',
+          '“Ça va, la vie, tranquille ? Tu passes la journée à bidouiller des petits trucs mais tu ne fais rien de ta vie en fait ?”'
+        ]},
+
+        { type: 'p', text: 'Quand j’ai expliqué tout cela, mon psy m’a répondu :' },
+
+        { type: 'quote', text: 'Votre façon de penser c’est ce qui vous différencie des autres. En vous jugeant, c’est leurs propres peurs et leurs propres insécurités qu’ils mettent en avant car, dans le fond, peut-être qu’ils sont jaloux ? Qui sait ? Peut-être qu’eux aussi aimeraient avoir le courage de quitter leur CDI, de rester quelque temps au chômage pour penser à rien, de fuir des études qu’ils n’aiment plus. Si ça se trouve, penser comme vous, et vous laisser autant de possibilités sans but précis, c’est peut-être vous la chanceuse dans tout ça ? Cultivez votre bizarrerie, votre manière de penser si différente de la norme, car c’est elle qui vous rend lucide.' },
+
+        { type: 'h2', text: 'Pour moi personnellement' },
+
+        { type: 'p', text: 'Je sais que pour mon conjoint, son but dans la vie c’est d’acheter une maison isolée au fin fond de la forêt, avec un énorme terrain, quelques animaux, et surtout un immense garage pour faire tous ses trucs. Il a ce but depuis tout petit, et il met tout en place dans sa vie pour qu’il se réalise, et quand on lui demande : “Tu te vois où dans 10 ans ?” ou bien “C’est quoi ta vie de rêve ?”, il répond sans hésiter qu’il serait dans cette maison.' },
+
+        { type: 'p', text: 'J’avoue que son but a raisonné chez moi, et j’ai commencé à le partager un peu. Dans ses paroles, je me suis imaginée avec mon plaid, mon livre, les pieds sur une souche et un café chaud dans les mains en train de regarder les feuilles tomber et mon homme couper du bois.' },
+        { type: 'p', text: 'Non mais, je signe où ?' },
+
+        { type: 'p', text: 'Mais avant lui ? Aucune idée.' },
+        { type: 'p', text: 'Est-ce que j’avais un but précis de vie avant de partager celui de mon conjoint ?' },
+        { type: 'p', text: 'Non.' },
+        { type: 'p', text: 'Est-ce que j’en ai quelque chose à faire ?' },
+        { type: 'p', text: 'Non plus.' },
+
+        { type: 'p', text: 'Je m’en fous de ce que les gens pensent, de ce qu’ils disent, ou de leur manière de venir donner leur avis (que je n’ai pas demandé d’ailleurs) :' },
+
+        { type: 'quote', text: 'Tu dis que c’est ton but mais ce n’est pas vrai en fait, ce n’est pas le tien. Tu t’es juste fait influencer par lui.' },
+
+        { type: 'p', text: 'Ok, Karen. Si pour toi, se faire inspirer par une personne inspirante c’est de l’influence, et bah tant mieux pour toi.' },
+        { type: 'p', text: 'D’accord, peut-être que si on se sépare mon conjoint et moi, je n’aurai plus le même but que maintenant. Et après ? Est-ce que ça fait de moi une ratée, parce que je ne sais pas clairement ce que je veux faire de ma vie ?' },
+
+        { type: 'h2', text: 'Buts et mini-buts' },
+
+        { type: 'p', text: 'On associe souvent passion et but, comme si l’un devait découler de l’autre. Par exemple : je suis super doué dans mes cours de théâtre et j’adore ça, donc je dois devenir acteur !' },
+        { type: 'p', text: 'Ou encore : je suis grave bon en musique, il faut absolument que je monte un groupe et fasse de grands concerts.' },
+        { type: 'p', text: 'Pourtant, les buts peuvent être infiniment plus simples que ce qu’on imagine.' },
+
+        { 
+          type: 'quote', 
+          text: `Me lever tous les matins.”
+          “Être heureux.”
+          “Voyager et voir le monde.”
+          “Bien vieillir.”
+          “M’occuper des autres.` 
+        },
+
+        { type: 'p', text: 'Ça paraît basique ? Peut-être. Mais ce sont des buts en soi. Et parfois, ça suffit largement.' },
+        { type: 'p', text: 'Pourquoi a-t-on fini par penser que ne pas avoir de but clair et important dans la vie n’était pas une bonne chose ? Et puis, dans le fond, ce qui est important pour les autres n’a peut-être pas la même valeur à nos yeux. Et c’est tant mieux.' },
+
+        { type: 'h2', text: 'Je n’ai pas trop de passion' },
+
+        { type: 'p', text: 'On dit que pour connaître sa passion, il faut se demander : “Qu’est ce que je serais capable de faire tous les jours avec envie et plaisir, et ce, même sans être payé ?”' },
+
+        { type: 'p', text: 'Cuisiner ? Lire ? Se promener ? Faire du sport ? Peindre ? Réparer des ordinateurs ? Regarder des documentaires sur la reproduction des écrevisses ?' },
+
+        { type: 'p', text: 'Et si, honnêtement, ta passion c’était de passer des heures à flâner dans les allées d’un supermarché, à observer les rayons, les packagings, les nouveaux produits, à t’inspirer de tout ça pour inventer des recettes ? Ça compte ou pas ?' },
+
+        { type: 'h3', text: 'Passion => Inspiration ?' },
+
+        { type: 'p', text: 'L’idée reçue, c’est qu’une passion doit être noble, productive, ou socialement valorisée.' },
+        { type: 'p', text: 'En vrai ? Non.' },
+        { type: 'p', text: 'Mais c\'est à cause de cette notion qu\'on doute, qu\'on peut ressentir cette pression. Avoir une passion, ce n\'est pas forcément savoir faire d’un instrument de musique comme un dieu. Et avoir un but dans la vie, ce n\'est pas obligatoirement faire un doctorat dans une matière prisée.' },
+        
+        {
+          type: 'p',
+          text: 'Allons plus loin encore.',
+          underline: true
+        },
+
+        { type: 'p', text: 'L’idée que sa passion est quelque chose, un domaine, une discipline, dans laquelle nous sommes doués est fausse.' },
+        { type: 'p', text: 'Avoir une passion, ce n’est pas avoir du talent. On peut être passionné par la peinture, s’essayer sur une toile, se rendre compte que l’on a peu de talent*. Est-ce une raison pour arrêter ? Pour se dire :' },
+
+        { type: 'quote', text: 'Non, ce n’est pas ma passion, je ne suis pas assez doué dans cette discipline pour que ça le soit.' },
+        { type: 'p', text: 'Ou encore :' },
+        { type: 'quote', text: 'Je n’ai pas de but dans la vie, car je n’ai du talent dans rien.' },
+
+        { type: 'h3', text: '*Qu’est ce que le talent ?' },
+        { type: 'p', text: 'Le talent, c’est relatif. Et se demander si l’on en a ou pas, c’est souvent une histoire de comparaison entre ce que l’on fait, et ce que les autres font. Et se comparer, c’est le meilleur moyen de se convaincre qu’on n’est “pas assez”. Alors qu’une passion, par définition, c’est intime. Elle n’a pas besoin d’être validée par les autres. A partir du moment où ça résonne, c’est une passion.' },
+        { type: 'p', text: 'Tu peux être passionné·e par la peinture et avoir zéro coup de pinceau. Tu peux adorer écrire des poèmes sur une marguerite qui ferait lever les yeux au ciel à Victor Hugo, et pourtant… si ça te fait vibrer, c’est une passion.' },
+
+        { type: 'h2', text: 'Moi, ma passion, c’est d’écrire (et de lire, aussi)' },
+
+        { type: 'p', text: 'C’est la seule et unique chose que je pourrais faire pendant des heures, avec plaisir, et sans être payé 1€ pour le faire.' },
+        { type: 'p', text: 'En créant ce blog (après des années de réflexion), j’ai fait le choix de passer du temps sur cette passion. Ça me nourrit, ça me stimule, j’adore ça. Pourtant, je n’ai aucun but !' },
+        { type: 'p', text: 'Si j’ai 1 lecteur qui lit mes articles, c’est gagné pour moi ! Et si je n’ai personne, c’est bien aussi.' },
+        { type: 'p', text: 'Est-ce qu’il y a des ratures dans mes textes ? Bien sûr. Est-ce que c’est bien écrit, est-ce que ça parle aux gens ? Peut-être, peut-être pas. Est-ce que je vais arrêter pour autant ? Non, parce que je le fais pour moi. Et honnêtement ? Le fait de ne pas y avoir posé de but précis m’aide à être plus légère, et simplement kiffer d’écrire mes articles sans pression !' },
+
+        {
+          type: 'p',
+          text: 'Piste de réflexion :',
+          underline: true
+        },
+        { type: 'p', text: 'Est-ce qu’avoir un but trop précis dans sa vie nous met une forme de pression ?' },
+
+        { type: 'h2', text: 'Les phrases toutes faites à la con' },
+
+        { type: 'p', text: 'Ah, les fameuses citations Pinterest :' },
+        { 
+          type: 'quote', 
+          text: `Trouve ta passion et tu ne travailleras jamais de ta vie.”
+          “Poursuis ton but, et ta vie sera comblée.`
+        },
+
+        { type: 'p', text: 'Ça sonne bien, hein ? Sauf que si tu es encore dans le flou, tu as juste envie de gifler la personne qui te sort ça. Pas parce qu’ils ont tort, mais parce que c’est facile à dire pour ceux qui ont déjà trouvé leur “truc”.' },
+
+        { type: 'p', text: 'Et puis, c’est quoi ce fatalisme à deux balles ? Ça veut dire que pour toucher une forme de bonheur, il faut travailler de sa passion ?' },
+        { type: 'p', text: 'Et si ma passion c’est de passer des heures dehors à ramasser des cailloux rigolos ? Si le but de ma vie c\'est de faire rire les gens dans la rue ?' },
+        { type: 'p', text: 'J’explique comment à mon banquier que oui, je suis encore dans le rouge mais, vous comprenez, je vis de ma passion.' },
+        { type: 'p', text: 'Phrase absurde = réponse absurde.' },
+
+        { type: 'h2', text: 'La pression sociale 2.0' },
+
+        { type: 'p', text: 'Avant, c’était la famille, l’école, les proches qui mettaient la pression : “Tu veux faire quoi plus tard ?”' },
+        { type: 'p', text: 'Aujourd’hui, s’ajoutent les réseaux sociaux et les success stories.' },
+        { type: 'p', text: 'Tu ouvres Instagram, et tu tombes sur des influenceurs qui te vendent du storytelling et du “purpose” en veux-tu en voilà. Histoire de bien te faire culpabiliser car toi, tu es nul(le) ty as vu, t’as pas encore compris comment “vivre de ta passion au bord de la mer et te faire 3000€ par mois en bossant 1h par jour en répondant à des mails”.' },
+
+        { type: 'p', text: 'Chacun raconte comment il a trouvé sa mission de vie et en vit pleinement. Résultat ? Tu crois que tu es le seul à ne pas avoir trouvé ta voie, à ne pas avoir compris comment vivre heureux comme eux, alors qu’en vrai (et pour éviter de dire que c’est 100% du flan) la majorité des gens tâtonnent, explorent ou changent de cap. Ce qui te passionne aujourd’hui va peut-être passer dans 1 an, dans 10 ans, et c’est complètement ok. On a tous le droit de changer d’avis, de changer de passion et de changer de but.' },
+        { type: 'p', text: 'Et encore heureux, ça s’appelle la liberté.' },
+
+        { type: 'h2', text: 'Le quaterback qui avait un rêve secret' },
+
+        { type: 'p', text: 'On a tous vu cette scène cliché dans les films : dans un lycée un quaterback super populaire, bourré de talent - le meilleur de son équipe - et qui fait du foot américain depuis des années.' },
+        { type: 'p', text: 'Puis, au fil de l’histoire, on apprend qu’en réalité il est totalement blasé de ce sport et que ça ne le nourrit plus du tout depuis longtemps, sauf qu’il s’oblige pour les autres, leurs regards, leurs moqueries, pour l’équipe ou pour les parents. Alors qu’au fond, lui ce qu’il rêve de faire sans en parler à personne, c’est faire des petits gâteaux.' },
+        { type: 'p', text: 'Comme Vladimir qui collectionne les petites licornes (si t’as cette ref, je te paye une bière).' },
+
+        { type: 'p', text: 'Devant ce type de scène, tout le monde voudrait lui hurler d’arrêter la mascarade : “Mais fonce, mec, fais tes cupcakes !”' },
+
+        { type: 'p', text: 'C’est pareil pour tout le monde. Si on a une passion dans la vie, ou un but, mais que nos idées ont changé en cours de route, à quel moment c’est censé être grave ?' },
+
+        { type: 'h2', text: 'L’idée de multiplicité' },
+
+        { type: 'p', text: 'Certaines personnes n’ont pas une passion unique, mais dix. Elles aiment écrire, dessiner, cuisiner, voyager, bricoler, jardiner, apprendre des langues… Elles s’éparpillent, elles explorent. On les appelle “multipotentielles”.' },
+        { type: 'p', text: 'J’ai l’impression que même encore aujourd’hui, beaucoup de personnes continuent de voir ça comme un défaut : “Tu ne sais pas ce que tu veux, tu n’arrives pas à choisir.”' },
+        { type: 'p', text: 'Ou bien on s’auto-inflige des phrases comme “je commence plein de trucs mais je n’ai pas de passion unique”. Du coup, encore une fois, on se sent parfois nul(le) de n’être soi-disant doué dans rien, ou de ne rien réussir à accomplir jusqu’à la fin.' },
+        { type: 'p', text: 'Alors qu’en réalité, c’est une richesse, non ?' },
+
+        {
+          type: 'p',
+          text: 'Piste de réflexion :',
+          underline: true
+        },
+        { type: 'p', text: 'Qui a dit qu’il fallait absolument choisir une seule passion pour toute une vie ? Est-ce que ce n’est pas une manière de se mettre dans des cases ?' },
+
+        { type: 'h2', text: 'La vie comme un chemin et pas une destination' },
+
+        { type: 'p', text: 'On croit souvent que le but de la vie, c’est d’atteindre une forme d’accomplissement ultime : trouver sa vocation, sa passion, son objectif final. Comme une course infernale qu’on doit à tout prix terminer pour enfin trouver le bonheur ou l’accomplissement.' },
+        { type: 'p', text: 'Bonjour l’anxiété.' },
+        { type: 'p', text: 'Mais peut-être que le but, ce n’est pas d’arriver quelque part.' },
+        { type: 'p', text: 'Peut-être que le but, c’est le chemin.' },
+        { type: 'p', text: 'Apprendre, aimer, se planter, recommencer, créer des souvenirs. Changer d’avis. Changer de vie. Explorer.' },
+        { type: 'p', text: 'Et si le vrai but de la vie n’était pas de “trouver sa passion”, mais juste vivre pleinement ?' },
+
+        {
+          type: 'p',
+          text: 'Piste de réflexion :',
+          underline: true
+        },
+        { type: 'p', text: 'Est-ce que le fait d’avoir un but flou ne serait pas plus sain que d’être trop ancré dans son idée ?' },
+
+        { type: 'p', text: 'Par exemple, se dire : moi, un des buts dans ma vie, c’est d’être autonome financièrement.' },
+        { type: 'p', text: 'Ça ouvre tellement de champs de possibilités, tellement de chemins. A 20 ans, ton idée pour atteindre ton but serait peut-être de monter ta société pour être ton propre patron et te faire un max de thune. Puis, à 30 ans, tu reviendrais sur ton plan et te dirais que non, être salarié dans une grande entreprise est une meilleure idée. Et puis, peut-être qu’à 50 ans tu vas finir par te dire qu’en réalité, avoir un jardin en permaculture et des récupérateurs d’eau, ça correspond plus à ton idée d’autonomie financière.' },
+        { type: 'p', text: 'A l’inverse, se dire : mon but c’est de bosser dans la finance pour devenir riche.' },
+        { type: 'p', text: 'Ça te laisse combien de portes de sortie ?' },
+        { type: 'p', text: 'Je me questionne encore sur ça.' },
+
+        { type: 'h2', text: 'Hey Jude' },
+
+        { type: 'p', text: 'John Lennon l’a assez bien résumé :' },
+        { type: 'quote', text: 'Quand j\'avais 5 ans, ma mère m\'a toujours dit que le bonheur était la clé de la vie. Quand je suis allé à l\'école, on m\'a demandé ce que je voulais faire quand je serais grand. J\'ai écrit \'heureux\'. On m\'a dit que je n\'avais pas compris la consigne, et je leur ai dit qu\'ils n\'avaient pas compris la vie.' },
+
+        { type: 'p', text: 'Alors oui, vouloir être heureux peut sembler vague, flou, impalpable. Parce que le bonheur, c’est subjectif. D’ailleurs, qu’est-ce que le bonheur ?' },
+        { type: 'p', text: 'Et attention, il ne faut pas non plus tomber dans une addiction au bonheur. Vouloir être heureux en permanence est illusoire. Parce que sans malheur, il n’y a pas de bonheur. Les deux se définissent ensemble.' },
+
+        { type: 'p', text: 'Mais l’idée de cet encart est de poser une question : est-ce que vouloir être heureux n’est pas un but dans la vie ?' },
+        { type: 'p', text: 'Et si c’est le cas, est-ce que nous ne sommes pas tous atteints du même but ?' },
+        { type: 'p', text: 'Mais si notre but à tous est bien de vivre heureux, ne devrions-nous pas prendre toutes les différences et toutes les complexités qu’on retrouve dans chaque individu ?' },
+
+        { type: 'h2', text: 'Le grand, le sage' },
+
+        { type: 'p', text: 'Albert Einstein a dit :' },
+        { type: 'quote', text: 'Tout le monde est un génie. Mais si vous jugez un poisson sur ses capacités à grimper à un arbre, il passera toute sa vie à croire qu\'il est stupide.' },
+
+        {
+          type: 'p',
+          text: 'Piste de réflexion :',
+          underline: true
+        },
+        { type: 'p', text: 'Si nous sommes tous différents et qu’on en a conscience, pourquoi l’on continue de se comparer ?' },
+
+        { type: 'p', text: 'Si le but de la vie de ton frère c’est de vivre de sa passion en devenant astronaute et qu’il met tout en oeuvre pour y arriver, est-ce qu’il est dans un meilleur cheminement que toi, est-ce qu’il est plus intelligent que toi, dont le but est peut-être de courir 20 minutes par jour pour vieillir en bonne santé ou bien, passer tes meilleures soirées avec tes potes pour te créer tes meilleurs souvenirs ?' },
+
+        { type: 'h2', text: 'Le livre qui m\'a bousculé' },
+
+        { type: 'quote', text: 'Le discours ambiant nous pousse sans cesse à nous améliorer. Sois plus heureux. Sois en meilleure santé. Sois plus intelligent, plus rapide, plus riche, plus sexy, plus productif. Mais soyons honnêtes : parfois tout va de travers, et il faut faire avec.' },
+
+        { type: 'p', text: 'Dans son livre "L’art subtil de s’en foutre", Mark Manson a une idée bien précise des attentes sociétales et de la manière dont nous nous angoissons à essayer d’y répondre. Je t’invite à l’envisager (je mets le lien tout en bas) si tu veux dédramatiser la situation et essayer une vision différente.' },
+        { type: 'p', text: 'Évidemment, il en existe plein d\'autres. Libre à toi de tester plusieurs supports, livres ou podcasts qui abordent ce sujet. Tu verras que nous ne sommes pas seuls dans ces interrogations.' },
+
+        { type: 'h2', text: 'Conclusion' },
+
+        { type: 'p', text: 'Il n’y a pas de réponses claires ou toutes faites. C’est plus une question de perception (comme tout dans la vie…)' },
+        { type: 'p', text: 'Et si l’on commençait à partir du principe que ne pas avoir de passion, ce n’est pas un échec.' },
+        { type: 'p', text: 'Que changer de but en cours de route, ce n’est pas une faiblesse.' },
+        { type: 'p', text: 'Et que de ne pas savoir répondre à “C’est quoi ton but dans la vie ?”, ce n’est pas dramatique.' },
+        { type: 'p', text: 'On n’est pas obligé d’avoir une passion spectaculaire pour justifier notre existence.' },
+        { type: 'p', text: 'On peut aussi choisir de passer son temps à faire des choses qu’on aime. Que ce soit sociétalement bien vu ou non n’est pas censé rentrer dans l’équation.' },
+
+        { type: 'p', text: 'Alors la prochaine fois qu’on te demande : “C’est quoi ta passion ? Ton but ?”' },
+        { type: 'p', text: 'On ne panique pas, on ne se compare plus. On répond simplement :' },
+
+        { type: 'quote', text: '“Être heureux, mon pote.”' },
+
+        { type: 'p', text: '______________________________________________________________________________' },
+        { type: 'p', text: 'Si tu veux plus d\'infos et quelques exercices, tu peux télécharger le PDF :) :' },
+        {
+          "type": "pdf",
+          "url": "/assets/pdf/exercices_but_passion.pdf",
+          "label": "Télécharger le PDF complet"
+        },
+
+        
+      ],
+      
     }
 
 

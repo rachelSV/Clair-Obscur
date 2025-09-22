@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ArticlesService } from '../articles/articles.service';
 import { ArticleRendererComponent } from '../articles/article-renderer/article-renderer.component';

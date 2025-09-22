@@ -8,7 +8,7 @@ export type ArticleBlock =
   | { type: 'h1'; text: string }
   | { type: 'h2'; text: string }
   | { type: 'h3'; text: string }
-  | { type: 'p'; text: string }               // paragraphe simple
+  | { type: 'p'; text: string; underline?: boolean }              // paragraphe simple
   | { type: 'rich-p'; segments: InlineSegment[] } // Le type rich-p nous permet de reproduire exactement les italiques (<i>), le gras (<b>/<strong>) et les sauts de ligne (<br>) sans jamais injecter du HTML.
   | { type: 'quote'; text: string; author?: string }
   | { type: 'img'; src: string; alt?: string; caption?: string }
@@ -17,7 +17,8 @@ export type ArticleBlock =
   | { type: 'hr' }
   | { type: 'callout'; title?: string; text: string }
   | { type: 'code'; lang?: string; code: string }
-  | { type: 'video'; src: string; title?: string };
+  | { type: 'video'; src: string; title?: string }
+  | { type: 'pdf'; url: string; label?: string }
 
 export interface Article {
   id: string;
@@ -30,4 +31,5 @@ export interface Article {
   author?: string;
   links?: { label: string; url: string }[];
   blocks: ArticleBlock[];
+  
 }

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ArticleBlock, InlineSegment } from '../models/article.model';
+import { Article, ArticleBlock, InlineSegment } from '../models/article.model';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 
 @Component({
@@ -14,5 +14,5 @@ export class ArticleRendererComponent {
 
   trackByIndex = (_: number, __: any) => _;
   isText = (s: InlineSegment): s is Extract<InlineSegment, { type: 'text' | 'em' | 'strong' }> =>
-    s.type === 'text' || s.type === 'em' || s.type === 'strong';
+    s.type === 'text' || s.type === 'em' || s.type === 'strong' ;
 }

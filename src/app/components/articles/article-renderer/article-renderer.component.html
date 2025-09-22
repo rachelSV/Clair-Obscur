@@ -5,7 +5,24 @@
     <h2 *ngIf="b.type === 'h2'">{{ b.text }}</h2>
     <h3 *ngIf="b.type === 'h3'">{{ b.text }}</h3>
 
-    <p *ngIf="b.type === 'p'">{{ b.text }}</p>
+    <p *ngIf="b.type === 'p'" [ngClass]="{ 'underline': b.underline }">
+      {{ b.text }}
+    </p>
+
+    <!-- ton nouveau block PDF -->
+    <div *ngIf="b.type === 'pdf'" class="mt-6">
+      <p>
+        <a
+          [href]="b.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-2 px-3 py-1 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition"
+        >
+          📄 {{ b.label || 'Ouvrir le PDF' }}
+        </a>
+      </p>
+    </div>
+    
 
     <!-- Paragraphe riche : texte + em + strong + br, SANS innerHTML -->
     <p *ngIf="b.type === 'rich-p'">
@@ -13,6 +30,7 @@
             <ng-container *ngIf="s.type === 'text'">{{ s.text }}</ng-container>
             <em *ngIf="s.type === 'em'">{{ s.text }}</em>
             <strong *ngIf="s.type === 'strong'">{{ s.text }}</strong>
+            
             <br *ngIf="s.type === 'br'" />
         </ng-container>
     </p>
@@ -54,3 +72,4 @@
 
   </ng-container>
 </article>
+
