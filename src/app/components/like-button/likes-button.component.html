@@ -1,33 +1,26 @@
 <button
-      type="button"
-      class="inline-flex items-center gap-2 rounded-full px-2 py-1 transition active:scale-[0.98]"
-      [class.bg-rose-50]="liked()"
-      [attr.aria-pressed]="liked()"
-      [attr.aria-label]="liked() ? 'Retirer le like' : 'Aimer cet article'"
-      (click)="onLike()"
-      [disabled]="busy()"
-    >
-      <span
-        class="relative grid place-items-center rounded-full p-1 transition"
-        [class.text-rose-600]="liked()"
-        [class.text-gray-600]="!liked()"
-        [class.scale-110]="liked() && !busy()"
-      >
-        <!-- Cœur SVG -->
-        <svg
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          class="transition-transform duration-150"
-        >
-          <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 4 4 6.5 4 8.04 4 9.54 4.81 10.5 6.09 11.46 4.81 12.96 4 14.5 4 17 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-            [attr.fill]="liked() ? 'currentColor' : 'none'"
-            stroke="currentColor"
-            stroke-width="2"
-          />
-        </svg>
-      </span>
+  type="button"
+  class="inline-flex items-center gap-2 rounded-full px-2 py-1 transition active:scale-[0.98]"
+  [class.bg-rose-50]="liked()"
+  [attr.aria-pressed]="liked()"
+  (click)="onToggle()"
+  [disabled]="busy()"
+>
+  <span
+    class="relative grid place-items-center rounded-full p-1 transition"
+    [class.text-rose-600]="liked()"
+    [class.text-gray-600]="!liked()"
+    [class.scale-110]="liked() && !busy()"
+  >
+    <svg width="22" height="22" viewBox="0 0 24 24">
+      <path
+        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 4 4 6.5 4 8.04 4 9.54 4.81 10.5 6.09 11.46 4.81 12.96 4 14.5 4 17 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+        [attr.fill]="liked() ? 'currentColor' : 'none'"
+        stroke="currentColor"
+        stroke-width="2"
+      />
+    </svg>
+  </span>
 
-      <span class="text-sm leading-none text-gray-700">{{ count() }}</span>
-    </button>
+  <span class="text-sm leading-none text-gray-700">{{ count() }}</span>
+</button>

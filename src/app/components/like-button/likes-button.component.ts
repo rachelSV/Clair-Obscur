@@ -1,6 +1,5 @@
 import { Component, Input, OnInit, signal } from '@angular/core';
-
-const NAMESPACE = 'clairobscur'; // pas d'espace, pas de slash
+import { Database, ref, get, runTransaction } from '@angular/fire/database';
 
 @Component({
   selector: 'app-likes-button',
@@ -14,42 +13,49 @@ export class LikesButtonComponent implements OnInit {
   liked = signal(false);
   busy = signal(false);
 
-  private counterName!: string; // nom du compteur côté API (safe)
+  private localKey!: string;
 
-  ngOnInit() {
-    // Nom de compteur 100% alphanumérique pour éviter les refus
-    this.counterName = ('article' + String(this.articleId))
-      .replace(/[^A-Za-z0-9]/g, '')
-      .slice(0, 64); // garde court si jamais
+  constructor(private db: Database) {}
 
-    this.getCount();
-  }
+  async ngOnInit() {
+    this.localKey = `liked:${this.articleId}`;
 
-  private async getCount() {
-    try {
-      const url = `https://api.counterapi.dev/v1/${NAMESPACE}/${this.counterName}`;
-      const res = await fetch(url, { method: 'GET' });
-      const data = await res.json();
-      this.count.set((data.value ?? data.count ?? 0) as number);
-    } catch {
-      // pas de throw : on reste silencieux en prod
-    }
-  }
-
-  async onLike() {
-    if (this.liked() || this.busy()) return;
-    this.busy.set(true);
-    try {
-      // V1 = GET sur /up (pas de POST)
-      const url = `https://api.counterapi.dev/v1/${NAMESPACE}/${this.counterName}/up`;
-      const res = await fetch(url, { method: 'GET' });
-      const data = await res.json();
-      this.count.set((data.value ?? data.count ?? 0) as number);
+    // Vérifie si déjà liké sur ce navigateur
+    if (localStorage.getItem(this.localKey) === '1') {
       this.liked.set(true);
-    } catch {
-      // option: afficher un toast d’erreur
-    } finally {
-      this.busy.set(false);
     }
+
+    const likesRef = ref(this.db, `likes/${this.articleId}`);
+    const snapshot = await get(likesRef);
+    this.count.set(snapshot.exists() ? snapshot.val() : 0);
+  }
+
+  async onToggle() {
+    if (this.busy()) return;
+    this.busy.set(true);
+
+    const likesRef = ref(this.db, `likes/${this.articleId}`);
+
+    if (this.liked()) {
+      // UNLIKE → décrémente
+      await runTransaction(likesRef, (current) => {
+        return Math.max((current || 0) - 1, 0);
+      });
+      this.liked.set(false);
+      localStorage.removeItem(this.localKey);
+    } else {
+      // LIKE → incrémente
+      await runTransaction(likesRef, (current) => {
+        return (current || 0) + 1;
+      });
+      this.liked.set(true);
+      localStorage.setItem(this.localKey, '1');
+    }
+
+    // Relire la valeur pour mettre à jour
+    const snapshot = await get(likesRef);
+    this.count.set(snapshot.val());
+
+    this.busy.set(false);
   }
 }
