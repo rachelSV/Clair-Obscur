@@ -894,7 +894,7 @@ export class ArticlesService {
         { type: 'p', text: 'Alors la prochaine fois qu’on te demande : “C’est quoi ta passion ? Ton but ?”' },
         { type: 'p', text: 'On ne panique pas, on ne se compare plus. On répond simplement :' },
 
-        { type: 'quote', text: '“Être heureux, mon pote.”' },
+        { type: 'quote', text: 'Être heureux, mon pote.' },
 
         { type: 'p', text: '______________________________________________________________________________' },
         { type: 'p', text: 'Si tu veux plus d\'infos et quelques exercices, tu peux télécharger le PDF :) :' },
@@ -903,10 +903,379 @@ export class ArticlesService {
           "url": "/assets/pdf/exercices_but_passion.pdf",
           "label": "Télécharger le PDF complet"
         },
+      ]
+    },
 
-        
+    {
+      id: 'a5',
+      title: 'Ma routine pour lutter contre la mélancolie et les idées noires',
+      description: 'Cette routine n’est pas une solution miracle, ni un remède contre la dépression. C\'est simplement un ensemble de petites actions que j\'ai mises en place dans ma vie pour essayer de limiter les effets de la mélancolie et des idées noires. Certaines fonctionnent mieux que d\'autres, mais l\'important est de trouver ce qui te convient le mieux à toi.',
+      tags: ['dépression', 'mélancolie', 'conseils'],
+      author: 'Elijah',
+      readTime: '9 min',
+      cover: 'assets/images/articles/pensees_noires.webp',
+      createdAt: new Date('2025-10-02'),
+      links: [
+        { label: 'Dispositif "Mon soutien psy" - remboursement séances', url: 'https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy' },
+        { label: 'Les troubles psychosomatiques', url: 'https://www.clinique-portes-eure.com/troubles-psychosomatiques-_r_59.html#:~:text=On%20parle%20de%20maladie%20ou,organique%20d%C3%A9celable%20(sympt%C3%B4mes%20fonctionnels).' },
+        { label: 'Le syndrome de l\'anhédonie, être incapable de ressentir du plaisir', url: 'https://www.psychologue.net/articles/anhedonie-ou-lincapacite-a-profiter-de-la-vie' },
+        { label: '3114 - Prévention du suicide', url: 'https://3114.fr/' },
+        { label: 'Affirmations positives du matin de 10min sur Spotify', url: 'https://open.spotify.com/episode/375HXGVlkViScb0xMgjPp0' },
+        { label: 'Jessy Pilates - Etirements mobilité de 10 min sans équipement', url: 'https://www.youtube.com/watch?v=tNVeSqOqklw' },
+        { label: 'Coffeelings - Journal d\'humeur, extension Google à installer', url: 'https://chromewebstore.google.com/detail/coffeelings/hcbddpppkcnfjifbcfnhmelpemdoepkk' },
+        { label: 'MindDay - application d\'auto-thérapie', url: 'https://www.mindday.com/' },
       ],
-      
+      blocks: [
+        { type: 'h2', text: 'Introduction' },
+
+        { type: 'p', text: 'Que vous soyez concerné(e) ou non, cet article peut être intéressant à lire.' },
+        { type: 'p', text: 'Soit parce qu’il peut donner des idées pour lutter contre les idées noires, soit parce qu’il peut aider à mieux comprendre un proche.' },
+        { type: 'p', text: 'On a encore trop tendance à juger ce qu’on ne comprend pas. Et comme notre société valorise avant tout la bonne humeur et le côté solaire, les personnes plus sombres sont souvent rapidement dénigrées.' },
+
+        { type: 'h2', text: 'Choisir et trier son entourage' },
+        { type: 'p', text: 'Premier tip.' },
+        { type: 'p', text: 'J’ai souvent fait face à des blagues lourdes ou des piques. À la longue, elles sont épuisantes : ça pousse à s’isoler, à fuir les sorties plutôt que de devoir se justifier.' },
+
+        { 
+          type: 'quote', 
+          text: `Ah mais tu ne bois pas grand chose, t’es vraiment pas drôle !"
+          "Tu rentres déjà ? Super la grand-mère."
+          "Tu piques du nez à 22h, fais un effort, on passe une bonne soirée."
+          "Tu fais tout le temps la gueule, ce n'est pas super agréable.` 
+        },
+
+        { type: 'p', text: '→ Sur les “altérants” : alcool, substances, non seulement ils aggravent les symptômes dépressifs, mais ils peuvent aussi déclencher des crises d’angoisse violentes. Ce n’est globalement sain pour personne de se voir “forcé” à consommer, et encore moins pour ceux qui sont fragiles mentalement.' },
+        { type: 'p', text: '→ Sur la fatigue et le sommeil : sortir demande déjà une grande énergie. Forcer à “tenir plus longtemps” n’apporte rien, au contraire. Un simple “merci d’être venu, bonne soirée” est bien plus précieux.' },
+        { type: 'p', text: '→ Sur la personnalité : on ne dirait pas à quelqu’un de solaire “tu es énervant à sourire tout le temps”. Alors pourquoi reprocher à une personne mélancolique d’être ce qu’elle est ?' },
+
+        { type: 'p', text: 'Spoiler : on sait très bien comment on est 😉' },
+
+        { type: 'h2', text: 'Un peu de contexte' },
+        { type: 'p', text: 'Je suis dépressive chronique diagnostiquée et suivie. Depuis toujours, ma mélancolie fait partie de moi : parfois comme une bulle familière qui me permet de me reposer, parfois comme un nuage de fumée qui m’isole de tout.' },
+        { type: 'p', text: 'L’un des symptômes les plus lourds à vivre au quotidien, c’est l’anhédonie : l’incapacité à ressentir du plaisir (appétitif ou de consommation), même face à des choses que j’aime d’habitude. C’est un vide qui accentue la descente aux enfers. Mais je vous l\'expliquerai dans un article dédié :)' },
+        { type: 'p', text: 'Les tourments, l’auto-sabotage ou les pensées su*c*daires, malheureusement, ça me connaît bien. Mais heureusement (voyons le positif, même si ce n’est pas trop mon genre !), ça peut aussi aider des gens, et rien que pour ça je me dis que tous ces troubles ne sont pas là en vain.' },
+        { type: 'p', text: 'Ce type de ressentis peuvent avoir plusieurs noms : des démons intérieurs, des pensées parasites… Chacun peut y aller de sa propre explication personnelle. Parfois, ils sont comme une source de réconfort, une safe place que l’on connaît bien et qui nous permet de nous reposer et de broyer du noir pour en ressortir plus fort ensuite. Mais parfois, ils sont aussi très dévastateurs. Car si l’on se laisse trop envahir, il est compliqué de s’en sortir.' },
+
+        { type: 'h2', text: 'Une image très parlante' },
+        { type: 'p', text: 'Avec mon psy, on a trouvé une image parlante : la vie comme une échelle. Chez la plupart des gens, il arrive qu’un barreau casse de temps en temps. C’est pénible, ça demande un effort supplémentaire pour grimper, mais on continue à avancer.' },
+        { type: 'p', text: 'Chez une personne mélancolique, c’est souvent plusieurs barreaux qui lâchent d’un coup. On traverse une période compliquée, chaque pas semble voué à l’échec, alors on préfère parfois s’arrêter un moment avant de reprendre des forces.' },
+        { type: 'p', text: 'Et chez une personne dépressive chronique, la sensation va encore plus loin : c’est comme si tous les barreaux cédaient à chaque tentative. On finit par se dire “à quoi bon ?”, par avoir peur d’essayer de nouveau, persuadé qu’on n’arrivera jamais en haut. Alors les pensées négatives s’installent : “je suis nul(le)”, “je n’y arriverai jamais”, et chaque pensée de ce genre devient comme un pas en arrière, une descente vers le bas de l’échelle.' },
+        { type: 'p', text: 'Être dans ce type d’état d’esprit, ce n’est vraiment pas facile au quotidien. Ça demande un effort constant de lutte et de concentration pour vivre avec une dualité permanente.' },
+
+        { type: 'h2', text: 'Ma routine personnelle' },
+        { type: 'p', text: 'Il y a souvent deux moments compliqués quand on est dans un mauvais mood. Le matin, et le soir.' },
+        { type: 'p', text: 'Mon psy m’a expliqué que, physiologiquement, notre corps connaît un pic de cortisol au réveil. Chez la plupart des gens, ce pic donne l’énergie nécessaire pour se lever et attaquer la journée. Mais pour une personne en dépression, ce même mécanisme se traduit souvent par une boule au ventre, une gorge serrée, un stress qui surgit dès l’ouverture des yeux.' },
+        { type: 'p', text: 'C’est une des choses les plus désagréables : même après une nuit de sommeil, même en vacances ou en week-end, la sensation reste. On n’a jamais vraiment l’impression de se lever “bien”, reposé ou détendu. Chaque matin commence déjà avec ce poids invisible à surmonter.' },
+
+        { type: 'h3', text: 'Routine du matin :' },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je me prive de téléphone. ' },
+            { type: 'text', text: 'Je m’oblige à ne pas regarder les écrans pendant au moins 1h au réveil. Déjà car j’évite de trop me stimuler. Mais aussi car ça me laisse le temps et la conscience de continuer ma routine (si je commence à regarder des conneries sur mon téléphone, 1 heure passe sans que je m’en sois aperçu…).' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je me répète 2 - 3 phrases de pleine conscience. ' },
+            { type: 'text', text: 'Je bouge les mains et les pieds, et je me répète des phrases toutes simples comme “je respire, je suis là”. Ça m’évite aussi de boucler sur les pensées négatives qui m’assaillent dès les premières secondes au réveil (Je suis fatigué, je ne veux pas me lever, je suis nulle, etc…).' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je lance une méditation positive (podcast de gratitude). ' },
+            { type: 'text', text: 'J’utilise un podcast de méditation positive avec des phrases de gratitude à répéter. Même si j’ai l’impression de ne pas y croire, ça coupe mes ruminations et occupe mon esprit autrement. Je me dis que ça court-circuite mon cerveau qui veut immédiatement me plomber le moral (je vous mets le lien du podcast dans les liens utiles tout en bas).' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je bois un grand verre d’eau. ' },
+            { type: 'text', text: 'Ah ça a été très dur au début, et ça me donnait envie de vomir. Mais on s’y habitue assez vite, et l’hydratation est essentielle, surtout quand mon cerveau va me faire oublier de boire ou de manger, ce qui accentue encore plus les symptômes négatifs.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais des étirements. ' },
+            { type: 'text', text: 'Une ostéopathe m’a conseillé une chaîne Youtube car j’avais des douleurs chroniques à répétition à cause du stress et de l’anxiété (je vous mets le lien en bas). J’y ai trouvé des vidéos de 10 minutes (même de 5) focus sur les étirements doux. Ça me permet de me réapproprier mon corps, et me soulage un peu, surtout si comme moi vous travaillez assis, ou que la dépression vous cloue au canapé 24/24h. Ça me soulage aussi les douleurs et les inflammations dues à ma maladie chronique, je vous en parlerai dans un article dédié.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je passe à la salle de bain. ' },
+            { type: 'text', text: 'Un moment très dur en général, à cause du miroir et / ou du manque d’énergie, mais j’ai découpé ce moment en 3 étapes rapides. Me brosser les dents. Me nettoyer le visage. Me brosser les cheveux. Si je n’y arrive pas, je remplace par un bain de bouche (et si c’est encore trop, un chewing-gum fera l’affaire pour l’instant, on verra plus tard ou demain), un coton sur le visage avec de l’eau micellaire ou juste de l’eau, et m’attacher les cheveux. Côté corps, si je peux, je prends une douche. Sinon, une toilette rapide. Sinon, une lingette bébé. Sinon, rien. On verra demain. L’essentiel est de faire ce que je peux, sans pression supplémentaire.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Côté chambre. ' },
+            { type: 'text', text: 'Si je travaille au bureau ou que j’ai besoin de sortir, et que j’ai encore la force et la patience de choisir une tenue, tant mieux. Sinon, je prends ce qui me tombe sous la main. Sinon, jogging. Si je suis en télétravail et que je n’ai plus l’énergie de faire ce qui est mentionné avant : pyjama.' }
+          ]
+        },
+
+        { type: 'p', text: 'Dans la matinée et courant de la journée, je vais avoir des pics de stress et d’anxiété. Des moments de down, parfois à cause de déclencheurs, parfois pour rien. Ce que j’essaie de faire :' },
+
+        { type: 'h3', text: 'Routine de l’après-midi :' },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Tenir des notes un peu partout. ' },
+            { type: 'text', text: 'J’ai une dizaine de supports pour noter mes émotions et mes pensées : un Google Doc comme journal intime, une note sur Google Keep, des vocaux que je m’envoie sur Messenger, l’extension “Coffeelings” sur mon ordi pour colorer mon mood, une conversation “Projet” sur ChatGPT, deux journaux sur MindDay (anxiété et gratitude) et un carnet papier. Peu importe le support : je peux écrire à tout moment et garder une trace. Relire mes notes m’aide à voir ce que j’ai traversé. Parfois, ça me permet de me rappeler qu’il y a eu des moments de mieux, donc je relativise. Mais aussi des moments bien pires, et je relativise aussi.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais des micro pauses. ' },
+            { type: 'text', text: 'Quand je sens la boule au ventre grossir ou que ma concentration s’effrite, je fais une pause, même d’une minute. Je regarde dehors, je m’isole si besoin (même aux toilettes), et je me dis quelques phrases simples de courage ou de gratitude : “Tu as déjà traversé une heure de travail”, “Déjà, tu t’es levée aujourd’hui, c’est une victoire”, “Il fait beau dehors, profite de la lumière”.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais des exercices de respiration. ' },
+            { type: 'text', text: 'La respiration est une mini-méditation à elle seule. Assise, je ferme les yeux (ou regarde dans le vide) et j’inspire 7 secondes, je retiens 3 secondes et j’expire 7 secondes. Ça relâche la tension accumulée (par le stress, ou le boulot), et me recentre en quelques instants.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 J’ai un grigri d’ancrage. ' },
+            { type: 'text', text: 'Un bidule, un objet, que je peux toucher à n’importe quel moment où mes pensées vont trop loin et que je me noie. Pour moi, c’est un collier offert par mon conjoint que je porte tous les jours. Je l’emmêle entre mes doigts. Ça me recentre, ça me rassure. Ce bidule peut être tout et n’importe quoi, un caillou, un petit objet, un truc à portée de main ou encore mieux, à porter sur soi. Il existe même des petits “Hug Pocket”, je vous mets le lien en bas.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais de la visualisation. ' },
+            { type: 'text', text: 'C’est un exercice de TCC dont m’a parlé mon psy. Je ferme les yeux, et je visualise un havre de paix. Le mien, c’est au milieu de la forêt, mais ça peut être en bord de mer, dans sa maison d’enfance, ou sur son canapé. J’essaye de m’imaginer là, en pleine conscience, sereine et détendue. D’en imaginer les sons, les odeurs, les ressentis. Ça coupe un peu de l’instant présent.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 J’essaie d’aller dehors. ' },
+            { type: 'text', text: 'Au mieux, je tente une bonne balade d’une heure environ en extérieur, quelle que soit la météo. Le simple fait de ressentir le vent, la pluie ou le froid me reconnecte à mon corps. Et aussi car un des grands remèdes à la dépression, c’est sortir. Prendre l’air, aller dans la nature, dans un parc… Ça permet de sortir de ma zone de rumination, de changer mes pensées, de me concentrer sur autre chose comme par exemple l’exercice des 5 sens (je vous l’explique plus bas). Si je ne supporte pas le bruit extérieur, je mets des écouteurs avec ou sans musique. Et si je n’ai pas la force de marcher longtemps, je fais 30 minutes, 20, ou même 5… ou juste un tour sur mon balcon. Et si je n’y arrive pas, j’ouvre la fenêtre et je regarde dehors. Chaque petit pas compte.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais du sport. ' },
+            { type: 'text', text: 'C’est le point le plus difficile. Quand tout va mal, rien ne me motive à bouger. Mais je me force. Parfois je fais 45 minutes, parfois 10, et il y a des périodes où je n’en fais pas pendant deux semaines. Mais j’essaie toujours d’y revenir parce que, c’est scientifiquement prouvé maintenant, les bénéfices du sport sur le moral sont énormes. Personnellement, je le fais surtout pour prendre le contrôle, ressentir quelque chose, me dépasser, sentir la satisfaction (même fugace) d’avoir accompli quelque chose. Et si en plus, j’arrive à “garder la forme”, c’est que du bonus !' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 J’écoute de la musique. ' },
+            { type: 'text', text: 'La musique a un pouvoir incroyable sur l’esprit. Elle peut m’aider à vivre ma tristesse sur l’instant avec un morceau mélancolique, ou me sortir de ma torpeur avec un son entraînant sur lequel je peux chanter et me défouler. C’est un déclencheur d’humeurs que j’utilise tous les jours. Et ça rejoint le dernier point juste en dessous.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je chante et je danse. ' },
+            { type: 'text', text: 'Alors, inutile d’être une Mariah Carey ou une Beyoncé hein, on s’en fout complètement que ce soit la bonne note, ou de faire des pas cohérents. Le but, c’est d’extérioriser, d’écouter des choses que l’on aime, des paroles qui nous parlent, de se mouvoir sur un son que l’on apprécie. Si on est pris dedans, c’est 100% de notre concentration qui est focus dessus.' }
+          ]
+        },
+
+        { type: 'h2', text: 'On arrive à un moment assez compliqué : le soir.' },
+        { type: 'p', text: 'Quand la fin de journée arrive et que la nuit commence à pointer, notre corps et notre système interne ralentissent. En général, c’est pour se préparer au repos et au sommeil. Sauf que pour les personnes dépressives ou anxieuses, c’est la porte ouverte au down.' },
+        { type: 'p', text: 'C’est là que les idées incessantes nous assaillent en continu. On repasse en boucle sur la journée, on imagine déjà les galères du lendemain… Et au final, on finit par s’angoisser tout seul pour des choses qui sont déjà passées, ou pas encore arrivées. On perd complètement la notion de l’instant présent.' },
+        { type: 'p', text: 'Même les personnes non dépressives connaissent ça, mais elles arrivent plus facilement à relativiser ou à changer de sujet. Pour un dépressif, au contraire, c’est un cercle vicieux : plus on se sent mal, plus on culpabilise, et plus on s’enfonce.' },
+
+        { type: 'h3', text: 'Routine du soir :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Pratiquer la gratitude. ' },
+            { type: 'text', text: 'J’essaie de faire un petit exercice qui consiste à lister 5 choses positives qui se sont passées dans ma journée écoulée. Je les écris, je les partage à voix haute avec mon conjoint ou juste dans ma tête, au choix. Avoir mangé au restau, eu droit à un petit massage, voir un chat au coin de la rue, réussir à s’être levé le matin… Ça agit comme un blocage à mes pensées noires, en me rappelant que si, il y a des choses bien dans ma vie.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais une petite méditation. ' },
+            { type: 'text', text: 'L’idée de méditer n’est pas de ne penser à rien (je pense d’ailleurs qu’il faut des années de pratique pour y arriver), mais par exemple de ne se concentrer que sur sa respiration. Inspirer, sentir mes poumons se remplir, expirer lentement. C’est parfois aussi bête que ça. Sauf que faire cet exercice pendant ne serait-ce que 5 minutes, ça occupe mon cerveau à une chose simple. Ça ne règle pas tout, mais ces quelques minutes de calme sont déjà précieuses.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 J’écris. ' },
+            { type: 'text', text: 'Je garde un carnet à portée de main pour noter toutes les idées qui surgissent le soir. J’écris tout ce qui passe, mais aussi des choses plus basiques : des courses, un sms, un bug, un événement… Toutes ces ampoules mentales qui s’allument tout au long de la soirée et me font “overthinker”. C’est une porte ouverte à l’anxiété, donc je pose tout sur papier. Je fais des listes en veux-tu en voilà, et même si je ne coche pas tout après, au moins je me décharge de toute responsabilité. C’est là, c’est lisible, on verra au moment venu.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je me change les idées. ' },
+            { type: 'text', text: 'Et souvent, c’est devant la télé ou derrière un livre. Alors, sociétalement l’un est mieux perçu que l’autre. Mais honnêtement, on s’en fout. Si tu n’es pas très lecture, regarder un film c’est bien aussi. Le but, ce n’est pas fuir ses problèmes, c’est offrir à son cerveau une pause avant le sommeil.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je sors marcher. ' },
+            { type: 'text', text: 'Quand même devant un livre ou une série je n’arrive pas à me concentrer car le moral est si bas que rien ne me dévie de ma route lugubre, je sors marcher, même dix minutes. C’est contre-intuitif quand on est au plus bas, mais je n’ai jamais regretté une balade, même courte. L’air frais, le changement d’environnement, ça casse la spirale des pensées.' }
+          ]
+        },
+
+        { type: 'h3', text: 'Avant de dormir :' },
+        {
+          type: 'p',
+          text: 'Au moment d’aller me coucher, c’est souvent compliqué. Impossible de trouver le sommeil car soit la tristesse est trop grande et me coupe l’endormissement, provoquant des nuits blanches à répétitions, soit les ruminations m’empêchent d’être sereine et détendue.'
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je fais un scan corporel. ' },
+            { type: 'text', text: 'J’ai trouvé cet exercice de TCC depuis quelques années, quand je vois que l’insomnie pointe le bout de son nez. Je vous explique en bas de l’article comment faire cet exercice si vous voulez tenter.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je prends de la CBD. ' },
+            { type: 'text', text: 'Alors attention, demandez toujours l’avis de votre médecin avant /!\\. Là je parle pour moi, mais chacun doit voir avec un professionnel ce qui est adapté. L’usage de la CBD, comme n’importe quel produit (médicaments compris) n’est jamais 100% neutre. Je l’utilise car c’est pour moi une manière naturelle pour me détendre et m’endormir plus facilement. Après 2 années de consommation d’anxiolytiques et de somnifères il y a 10 ans de cela, je suis désormais contre la médication pour mon état.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Je mets du son en arrière-plan. ' },
+            { type: 'text', text: 'Alors non, ce n’est pas bien. Mais chacun fait comme il peut. Donc, ce n’est pas rare que je mette un film en fond, cela me rassure et m’aide à trouver le sommeil. Je ne mets que des films que je connais bien, ainsi je peux me visualiser les scènes et les dialogues dans mon esprit, et ça me fait un parfait blocus de pensées. On peut aussi mettre de la musique douce, mais personnellement chez moi ça ne marche pas trop.' }
+          ]
+        },
+
+        { type: 'p', text: 'Bref, voilà toute ma petite routine pour vivre dans les meilleures conditions qui soient au quotidien, et ne pas me sentir envahie et submergée par la tristesse de ma mélancolie, ou les tourments de la dépression.' },
+
+        { type: 'h2', text: 'Ce n’est pas tous les jours “aussi simple”' },
+        { type: 'p', text: 'Il y a des jours où je ne fais rien de tout ça. Et dans ces moments-là, je m’enfonce encore plus en me répétant que je suis une incapable. Pourtant, il arrive aussi que mon esprit me souffle : ' },
+        { type: 'quote', text: 'Ok, aujourd’hui tu as galéré. C’est pas grave, demain on fera mieux.' },
+        { type: 'p', text: 'C’est ça, la réalité de la dépression : un combat permanent entre soi et son cerveau. Il faut essayer de ne pas baisser les bras, car c’est souvent dans ces moments de relâche que les crises trouvent une brèche.' },
+
+        { type: 'h2', text: 'Les phases de crise' },
+        { type: 'p', text: 'Pendant mes phases que j’appelle mes “crises”, je suis capable de rester dans mon lit en boule devant instagram (ou devant rien du tout) et je me lève 10 minutes avant de partir au travail avec les fringues de la veille.' },
+        { type: 'p', text: 'Parfois, le seul effort que je fournis, c’est m’alimenter pour tenir debout. Et tout ce que je réussis à faire, c’est scroller ou regarder Netflix pendant des heures, sans en tirer aucun bien-être ni aucune satisfaction.' },
+        { type: 'p', text: 'C’est frustrant, parce que ça ne me remonte pas le moral, mais c’est plus fort que moi : impossible de faire autrement dans ces phases-là.' },
+
+        { type: 'h2', text: 'À vous autres, lecteurs' },
+        { type: 'p', text: 'Aller voir un spécialiste, c’est aussi apprendre à contrer les “fausses bonnes idées”. Parce qu’on en reçoit beaucoup : conseils donnés à la volée, phrases toutes faites, méthodes glanées sur internet. Les fameux : “tu devrais…”, “fais plutôt…”, “force-toi”.' },
+        { type: 'p', text: 'Je les ai moi-même appliquées pendant des années, en pensant bien faire… mais au final, ça m’a souvent fait plus de mal que de bien.' },
+        { type: 'p', text: 'Il y a autant de personnalités que de façons de vivre avec sa mélancolie. Comme on déconstruit peu à peu le mythe du “corps parfait”, il serait utile de déconstruire aussi l’idée qu’une personne dépressive doit simplement “changer d’attitude” pour aller mieux.' },
+        { type: 'p', text: 'Si vous n’êtes pas professionnel de santé mentale, vos conseils — même bienveillants — devraient être donnés avec parcimonie, surtout si vous connaissez peu la personne. Car au lieu d’aider, ils peuvent renforcer le manque d’estime, de confiance… et accentuer la comparaison avec ceux qui “semblent y arriver”.' },
+        { type: 'p', text: 'Si vous avez dans votre entourage quelqu’un atteint de dépression (chronique ou non) ou d’une forte mélancolie, ne partez jamais du principe que c’est du cinéma, de l’exagération, ou un manque d’effort.' },
+
+        { type: 'p', text: 'Soyez plutôt la personne qui :' },
+        { type: 'ul', items: [
+          'écoute sans juger,',
+          'encourage à chercher une aide adaptée,',
+          'accompagne sans vouloir sauver.'
+        ]},
+
+        { type: 'p', text: 'Oui, cette personne répétera sûrement ses problèmes. Oui, elle ne mettra peut-être pas vos conseils en pratique immédiatement. C’est normal.' },
+
+        { type: 'h2', text: 'Ce qui ne marche pas' },
+        { type: 'p', text: 'Voici une petite liste de choses à éviter si vous traversez des épisodes :' },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Se forcer à être positif(ve) en permanence. ' },
+            { type: 'text', text: 'Le fameux “regarde le bon côté des choses” peut sembler bienveillant, mais en réalité il culpabilise. Apprendre à voir le positif prend du temps, avec des exercices progressifs ou une thérapie. (“T’es anxieux ? Bah arrête”).' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Se taire ou se dire que ça va passer. ' },
+            { type: 'text', text: 'Au même titre que se forcer à être positif, ne pas parler de son état avec un professionnel de santé (ou au moins son entourage pour commencer), ou se persuader que ça passera avec le temps n’a jamais rien guéri.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Se forcer à “penser à autre chose” sur une longue durée. ' },
+            { type: 'text', text: 'On ne peut pas simplement “switcher” son cerveau et passer du noir au blanc en claquant des doigts. Forcer l’oubli ou être dans le déni rend les idées noires encore plus tenaces. Le cerveau s’adapte, mais il est parfaitement au courant du fond de vos pensées.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 S’isoler complètement. ' },
+            { type: 'text', text: 'Prendre du temps seul est nécessaire, mais couper tout lien social entretient la spirale. On peut réduire son cercle, choisir des personnes bienveillantes, mais rester en lien est vital.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Chercher des solutions miracles sur internet. ' },
+            { type: 'text', text: '“Cette astuce guérit la dépression en 3 jours !” → spoiler : ça n’existe pas. Chaque personne est différente, et seul un suivi adapté (psy, médecin, thérapie) peut réellement aider.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Culpabiliser quand on n’y arrive pas. ' },
+            { type: 'text', text: 'Se dire “je suis nul(le), je n’ai pas fait ma routine” ne sert qu’à nourrir le cercle vicieux. Les jours off font partie du processus.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Se comparer aux autres. ' },
+            { type: 'text', text: 'Regarder les vies parfaites sur les réseaux ou envier ceux qui semblent “plus heureux” ou “plus positif” ne fait qu’aggraver le sentiment d’échec. Tout le monde montre ses victoires, rarement ses luttes.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 Compter sur les altérants pour oublier. ' },
+            { type: 'text', text: 'Ça anesthésie sur le moment. Mais pris en dehors d’un contexte sain de soirée pour aider à traverser les phases, ça aggrave les symptômes à long terme, et peut même déclencher des crises d’angoisse violentes.' }
+          ]
+        },
+
+        { type: 'p', text: 'Ca peut être très bateau dit comme ça, mais cette phrase a résonné chez moi pour m’aider à sauter le pas de la thérapie : ' },
+        { type: 'quote', text: 'Au même titre que tu vas voir un dentiste pour une rage de dent car c’est son métier, pourquoi ne pas aller voir quelqu’un de qualifié pour les troubles psy ?' },
+
+        { type: 'p', text: 'Il est scientifiquement prouvé aujourd’hui que la plupart de nos maux et/ou de nos maladies sont le résultat somatique de nos tourments mentaux.' },
+        { type: 'p', text: 'Je vous mets un article super intéressant dans les utiles en bas :)' },
+
+        { type: 'h2', text: 'Conclusion' },
+        { type: 'p', text: 'Dans ces moments, l’essentiel est de ne pas baisser les bras. Même s’il faut accepter des jours de “off” complet, il faut garder en tête qu’on pourra réessayer demain.' },
+        { type: 'p', text: 'Le but n’est pas de viser une perfection irréaliste, mais de rester dans l’instant présent :' },
+        { type: 'ul', items: [
+          'laisser la nostalgie grise d’hier derrière soi,',
+          'et garder l’anxiété piquante de demain… pour demain.'
+        ]},
+        { type: 'p', text: 'Vivre toujours heureux et de bonne humeur est une illusion — et souvent un déni.' },
+        { type: 'quote', text: 'Comme le Pixar “Vice Versa” nous le montre si bien : il n’y a pas de joie sans tristesse, toutes les émotions doivent être acceptées et vécues pour vivre en harmonie.' },
+        { type: 'p', text: 'N’oubliez pas que la mélancolie est un état d’esprit, et que la dépression est une maladie. Se faire suivre n’a rien de honteux, aller voir un psychologue ou un psychiatre est la meilleure main tendue que vous pourriez faire pour vous-même.' },
+        { type: 'p', text: 'À l’aide de petits exercices, d’explications sur le “principe de la perception”, et des petits gestes quotidiens, on peut venir à bout d’une dépression ou apprendre à vivre avec une mélancolie assumée et moins envahissante.' },
+
+        { type: 'callout', text: '/!\\ Il existe désormais un programme où l’on vous rembourse jusqu\'à 12 séances par an chez un psychologue. Je vous mets le lien juste en bas /!\\' },
+
+        { type: 'p', text: '! Je ferai un article complet et dédié uniquement au sujet de la dépression sous peu. C’est un gros morceau, un sujet important et très lourd, donc je voudrais faire quelque chose de bien et de carré !' },
+        { type: 'p', text: '______________________________________________________________________________' },
+        { type: 'p', text: 'Les exercices TCC de scan corporel et des 5 sens :) :' },
+        {
+          "type": "pdf",
+          "url": "/assets/pdf/exo_5_sens.pdf",
+          "label": "L'exercice des 5 sens"
+        },
+        {
+          "type": "pdf",
+          "url": "/assets/pdf/exo_scan_corporel.pdf",
+          "label": "L'exercice de scan corporel"
+        }
+      ]
     }
 
 
