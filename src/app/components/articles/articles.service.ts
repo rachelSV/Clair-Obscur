@@ -909,12 +909,12 @@ export class ArticlesService {
     {
       id: 'a5',
       title: 'Ma routine pour lutter contre la mélancolie et les idées noires',
-      description: 'Cette routine n’est pas une solution miracle, ni un remède contre la dépression. C\'est simplement un ensemble de petites actions que j\'ai mises en place dans ma vie pour essayer de limiter les effets de la mélancolie et des idées noires. Certaines fonctionnent mieux que d\'autres, mais l\'important est de trouver ce qui te convient le mieux à toi.',
+      description: 'Cette routine est un ensemble de petites actions que j\'ai mises en place dans ma vie pour essayer de limiter les effets de la mélancolie et des idées noires, à force d\'années de recherches, de conseils et de thérapies. Certaines fonctionnent mieux que d\'autres, mais l\'important est de trouver ce qui convient le mieux à soi.',
       tags: ['dépression', 'mélancolie', 'conseils'],
       author: 'Elijah',
       readTime: '9 min',
       cover: 'assets/images/articles/pensees_noires.webp',
-      createdAt: new Date('2025-10-02'),
+      createdAt: new Date('2025-10-03'),
       links: [
         { label: 'Dispositif "Mon soutien psy" - remboursement séances', url: 'https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy' },
         { label: 'Les troubles psychosomatiques', url: 'https://www.clinique-portes-eure.com/troubles-psychosomatiques-_r_59.html#:~:text=On%20parle%20de%20maladie%20ou,organique%20d%C3%A9celable%20(sympt%C3%B4mes%20fonctionnels).' },
@@ -924,6 +924,7 @@ export class ArticlesService {
         { label: 'Jessy Pilates - Etirements mobilité de 10 min sans équipement', url: 'https://www.youtube.com/watch?v=tNVeSqOqklw' },
         { label: 'Coffeelings - Journal d\'humeur, extension Google à installer', url: 'https://chromewebstore.google.com/detail/coffeelings/hcbddpppkcnfjifbcfnhmelpemdoepkk' },
         { label: 'MindDay - application d\'auto-thérapie', url: 'https://www.mindday.com/' },
+        { label: 'Exercice de respiration - cohérence cardiaque', url: 'https://www.youtube.com/watch?v=cHuUs483S4Q' }
       ],
       blocks: [
         { type: 'h2', text: 'Introduction' },
@@ -949,6 +950,7 @@ export class ArticlesService {
         { type: 'p', text: '→ Sur la personnalité : on ne dirait pas à quelqu’un de solaire “tu es énervant à sourire tout le temps”. Alors pourquoi reprocher à une personne mélancolique d’être ce qu’elle est ?' },
 
         { type: 'p', text: 'Spoiler : on sait très bien comment on est 😉' },
+        { type: 'p', text: 'Spoiler 2 : si cette partie t\'as fais tiquer, t\'es peut-être concerné.' },
 
         { type: 'h2', text: 'Un peu de contexte' },
         { type: 'p', text: 'Je suis dépressive chronique diagnostiquée et suivie. Depuis toujours, ma mélancolie fait partie de moi : parfois comme une bulle familière qui me permet de me reposer, parfois comme un nuage de fumée qui m’isole de tout.' },
@@ -960,7 +962,12 @@ export class ArticlesService {
         { type: 'p', text: 'Avec mon psy, on a trouvé une image parlante : la vie comme une échelle. Chez la plupart des gens, il arrive qu’un barreau casse de temps en temps. C’est pénible, ça demande un effort supplémentaire pour grimper, mais on continue à avancer.' },
         { type: 'p', text: 'Chez une personne mélancolique, c’est souvent plusieurs barreaux qui lâchent d’un coup. On traverse une période compliquée, chaque pas semble voué à l’échec, alors on préfère parfois s’arrêter un moment avant de reprendre des forces.' },
         { type: 'p', text: 'Et chez une personne dépressive chronique, la sensation va encore plus loin : c’est comme si tous les barreaux cédaient à chaque tentative. On finit par se dire “à quoi bon ?”, par avoir peur d’essayer de nouveau, persuadé qu’on n’arrivera jamais en haut. Alors les pensées négatives s’installent : “je suis nul(le)”, “je n’y arriverai jamais”, et chaque pensée de ce genre devient comme un pas en arrière, une descente vers le bas de l’échelle.' },
-        { type: 'p', text: 'Être dans ce type d’état d’esprit, ce n’est vraiment pas facile au quotidien. Ça demande un effort constant de lutte et de concentration pour vivre avec une dualité permanente.' },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Être dans ce type d’état d’esprit, ce n’est vraiment pas facile au quotidien. Ça demande un effort constant de lutte et de concentration pour vivre avec une dualité permanente. Cette envie d’aller bien, d’aller mieux, mais cette nécessité de vivre sa mélancolie en pleine conscience sans la laisser nous envahir.' },
+          ]
+        },
 
         { type: 'h2', text: 'Ma routine personnelle' },
         { type: 'p', text: 'Il y a souvent deux moments compliqués quand on est dans un mauvais mood. Le matin, et le soir.' },
@@ -1000,7 +1007,7 @@ export class ArticlesService {
           type: 'rich-p',
           segments: [
             { type: 'strong', text: '🔸 Je fais des étirements. ' },
-            { type: 'text', text: 'Une ostéopathe m’a conseillé une chaîne Youtube car j’avais des douleurs chroniques à répétition à cause du stress et de l’anxiété (je vous mets le lien en bas). J’y ai trouvé des vidéos de 10 minutes (même de 5) focus sur les étirements doux. Ça me permet de me réapproprier mon corps, et me soulage un peu, surtout si comme moi vous travaillez assis, ou que la dépression vous cloue au canapé 24/24h. Ça me soulage aussi les douleurs et les inflammations dues à ma maladie chronique, je vous en parlerai dans un article dédié.' }
+            { type: 'text', text: 'Une ostéopathe m’a conseillé une chaîne Youtube car j’avais des douleurs chroniques à répétition à cause du stress et de l’anxiété (je vous mets le lien en bas). J’y ai trouvé des vidéos de 10 minutes (même de 5) focus sur les étirements doux. Ça me permet de me réapproprier mon corps, et me soulage un peu, surtout si comme moi vous travaillez assis, ou que la dépression vous cloue au canapé 24/24h. Ça me soulage aussi les douleurs et les inflammations dues à mon "bobo" chronique, je vous en parlerai dans un article dédié.' }
           ]
         },
         {
@@ -1039,14 +1046,14 @@ export class ArticlesService {
           type: 'rich-p',
           segments: [
             { type: 'strong', text: '🔸 Je fais des exercices de respiration. ' },
-            { type: 'text', text: 'La respiration est une mini-méditation à elle seule. Assise, je ferme les yeux (ou regarde dans le vide) et j’inspire 7 secondes, je retiens 3 secondes et j’expire 7 secondes. Ça relâche la tension accumulée (par le stress, ou le boulot), et me recentre en quelques instants.' }
+            { type: 'text', text: 'La respiration est une mini-méditation à elle seule. Assise, je ferme les yeux (ou regarde dans le vide) et j’inspire 7 secondes, je retiens 3 secondes et j’expire 7 secondes. Ou alors je pratique l’exercice de la cohérence cardiaque. Ça relâche la tension accumulée (par le stress, ou le boulot), et me recentre en quelques instants.' }
           ]
         },
         {
           type: 'rich-p',
           segments: [
             { type: 'strong', text: '🔸 J’ai un grigri d’ancrage. ' },
-            { type: 'text', text: 'Un bidule, un objet, que je peux toucher à n’importe quel moment où mes pensées vont trop loin et que je me noie. Pour moi, c’est un collier offert par mon conjoint que je porte tous les jours. Je l’emmêle entre mes doigts. Ça me recentre, ça me rassure. Ce bidule peut être tout et n’importe quoi, un caillou, un petit objet, un truc à portée de main ou encore mieux, à porter sur soi. Il existe même des petits “Hug Pocket”, je vous mets le lien en bas.' }
+            { type: 'text', text: 'Un bidule, un objet, que je peux toucher à n’importe quel moment où mes pensées vont trop loin et que je me noie. Pour moi, c’est un collier offert par mon conjoint que je porte tous les jours. Je l’emmêle entre mes doigts. Ça me recentre, ça me rassure. Ce bidule peut être tout et n’importe quoi, un caillou, un petit objet, un truc à portée de main ou encore mieux, à porter sur soi. Il existe même des petits “Hug Pocket”.' }
           ]
         },
         {
@@ -1158,7 +1165,8 @@ export class ArticlesService {
         { type: 'p', text: 'Bref, voilà toute ma petite routine pour vivre dans les meilleures conditions qui soient au quotidien, et ne pas me sentir envahie et submergée par la tristesse de ma mélancolie, ou les tourments de la dépression.' },
 
         { type: 'h2', text: 'Ce n’est pas tous les jours “aussi simple”' },
-        { type: 'p', text: 'Il y a des jours où je ne fais rien de tout ça. Et dans ces moments-là, je m’enfonce encore plus en me répétant que je suis une incapable. Pourtant, il arrive aussi que mon esprit me souffle : ' },
+        { type: 'p', text: 'Il y a des jours où je n’ai besoin que d’1 ou 2 exercices et je vais mieux. Heureusement encore, je ne suis pas 100% du temps en down, il y a de nombreuses phases où je vais très bien.' },
+        { type: 'p', text: 'Et il y a des jours où je ne fais rien de toute la liste. Et dans ces moments-là, je m’enfonce encore plus en me répétant que je suis une incapable. Pourtant, il arrive aussi que mon esprit me souffle : ' },
         { type: 'quote', text: 'Ok, aujourd’hui tu as galéré. C’est pas grave, demain on fera mieux.' },
         { type: 'p', text: 'C’est ça, la réalité de la dépression : un combat permanent entre soi et son cerveau. Il faut essayer de ne pas baisser les bras, car c’est souvent dans ces moments de relâche que les crises trouvent une brèche.' },
 
@@ -1259,6 +1267,7 @@ export class ArticlesService {
         { type: 'quote', text: 'Comme le Pixar “Vice Versa” nous le montre si bien : il n’y a pas de joie sans tristesse, toutes les émotions doivent être acceptées et vécues pour vivre en harmonie.' },
         { type: 'p', text: 'N’oubliez pas que la mélancolie est un état d’esprit, et que la dépression est une maladie. Se faire suivre n’a rien de honteux, aller voir un psychologue ou un psychiatre est la meilleure main tendue que vous pourriez faire pour vous-même.' },
         { type: 'p', text: 'À l’aide de petits exercices, d’explications sur le “principe de la perception”, et des petits gestes quotidiens, on peut venir à bout d’une dépression ou apprendre à vivre avec une mélancolie assumée et moins envahissante.' },
+        { type: 'p', text: 'N’oubliez pas non plus qu’il est important d’être à l’aise avec son psy. N’hésitez pas à changer s’il n’y a pas de feeling.' },
 
         { type: 'callout', text: '/!\\ Il existe désormais un programme où l’on vous rembourse jusqu\'à 12 séances par an chez un psychologue. Je vous mets le lien juste en bas /!\\' },
 
