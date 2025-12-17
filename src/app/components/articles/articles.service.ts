@@ -1285,7 +1285,408 @@ export class ArticlesService {
           "label": "L'exercice de scan corporel"
         }
       ]
-    }
+    },
+
+
+    {
+      id: 'a6',
+      title: 'Vivre avec un corps que l’on n’aime pas',
+      description: 'J’ai écrit cet article il y a plusieurs mois, mais ce n’était pas le bon moment. Je n’en étais pas pleinement satisfaite. Mais, il y a quelques jours, je me suis vue faire quelque chose que je n’avais pas fait depuis longtemps : pleurer dans une cabine d’essayage. Ma dépression de 2025 + ces deux derniers mois de chômage m’ont fait prendre du poids, et en sortant de la boutique, j’ai fini par être déprimée toute la journée au point de me gâcher la sortie shopping avec mon mec. Ce déclic m’a permis de revenir sur cet article pour parler de ce problème qui gâche la vie de bien trop de monde.',
+      tags: ['corps', 'complexes', 'société', 'confiance'],
+      createdAt: new Date('2025-12-17'),
+      author: 'Elijah',
+      readTime: '8 min',
+      cover: 'assets/images/articles/corps.webp',
+      links: [
+        { label: 'Dispositif "Mon soutien psy" - remboursement séances', url: 'https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy' },
+        { label: 'Le tissu adipeux', url: 'https://www.kenhub.com/fr/library/anatomie/tissu-adipeux?' },
+        { label: 'Conséquences d\'exercice d\'abdos mal effectués', url: 'https://www.osteopathe-sud-essonne-senart.fr/post/stop-aux-mauvais-exercices-d-abdominaux-et-crunch-pr%C3%A9servez-votre-dos-et-votre-p%C3%A9rin%C3%A9e' },
+        { label: 'MindDay - application d\'auto-thérapie', url: 'https://www.mindday.com/' },
+        { label: 'Podcasts Chloé Bloom - développement personnel, acceptation de soi', url: 'https://podcast.ausha.co/la-vie-suffit' },
+        { label: 'Podcasts Chris Aud - L\'éveil au masculin', url: 'https://smartlink.ausha.co/l-eveil-du-masculin' },
+
+      ],
+
+      blocks: [
+        {
+          type: 'p',
+          text: 'Il y a des personnes pour qui ce n’est pas un sujet problématique. Mais selon une étude de l’IFOP faite en 2023, 1 Français sur 2 n\'apprécie pas son corps et son physique, avec 60% de femmes.'
+        },
+        { type: 'p', text: 'Ça peut être “juste” ne pas aimer une partie de soi… ou ressentir un dégoût plus global, plus profond.' },
+        { type: 'p', text: 'Quel que soit le genre, tout le monde a des complexes et ils peuvent être plus ou moins importants ou handicapants au quotidien.' },
+        { type: 'p', text: 'Le poids, les cheveux, la musculature, la forme du nez ou la taille des jambes… Tout peut être sujet à complexes selon l’individu.' },
+
+        { type: 'h2', text: 'Les attentes sociétales' },
+
+        {
+          type: 'p',
+          text: 'Concernant les femmes, elles subissent des exigences et des injonctions depuis bien longtemps et ce, quelle que soit la décennie ou la mode. Si dans les années 90 on ne jurait que par la maigreur, la mode a récemment tourné vers une tendance d’un bas du corps très développé.'
+        },
+        {
+          type: 'p',
+          text: 'Très souvent lancées par des stars et des influenceurs, les modes changent constamment et nous forcent continuellement à la comparaison. Peut-être encore plus aujourd’hui avec les réseaux sociaux. Et même s’il existe de nombreux comptes qui mettent en avant la vérité :'
+        },
+        {
+          type: 'ul',
+          items: [
+            'pose VS réalité,',
+            'filtres,',
+            'photos retouchées,',
+          ]
+        },
+        { type: 'p', text: '(Je te mets quelques comptes sympas dans les utiles).' },
+        { type: 'p', text: 'Mais beaucoup s’en donnent encore à cœur joie sur l’exposition de leur corps soi-disant “de rêve”.' },
+
+        {
+          type: 'p',
+          text: 'Les hommes ne sont pas en reste dans ce sujet, même si l’on en parle moins. Mais ces influences et ces comparaisons heurtent aussi la gent masculine, et à raison. Aujourd’hui encore, on tourne sur le même genre de stéréotypes.'
+        },
+        {
+          type: 'p',
+          text: 'Modèles photo bien musclés, grands de taille, programmes de sport à gogo pour développer son corps, l’épaissir, avoir un 6-pack. Si tu ne fais pas de sport, tu es fainéant, si tu en fais, tu es un kéké.'
+        },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Posons-nous une question honnête : dans quel but on s’inflige ça ? Pour plaire ? Pour se rassurer ? Pour éviter d’être jugé ? Pour l’ego ? Pour rester “instagrammable” ? (Spoiler : souvent, un mélange de tout ça.)'
+        },
+
+        { type: 'h2', text: 'Les vieilles idées' },
+
+        {
+          type: 'p',
+          text: 'Alors non, on ne va pas tout mettre sur le dos des anciennes générations. Mais on ne peut pas non plus nier l’existence d’une exigence toute particulière sur les physiques qui a gravité autour des années 70 - 90, et qui fait qu’aujourd’hui encore, beaucoup d’entre nous ont grandi avec des messages du type :'
+        },
+        {
+          type: 'quote',
+          text: 'une femme doit être mince et sexy”, “un homme doit être viril et musclé.'
+        },
+        { type: 'p', text: 'La marge de manœuvre est quand même super restreinte…' },
+
+        {
+          type: 'p',
+          text: 'Synonymes de beauté et de sensualité dans ces dernières décennies du 20ème siècle, tous les moyens étaient bons pour avoir son corps mince et parfait.'
+        },
+        {
+          type: 'ul',
+          items: [
+            'Des heures à la salle de sport à faire des exercices rarement bien effectués,',
+            'Des régimes alimentaires très bancals, voire complètement barrés : le régime 100% pomme, ou la sous-nutrition à ne manger que des légumes verts, entre autres…',
+          ]
+        },
+
+        {
+          type: 'p',
+          text: 'Heureusement, aujourd’hui, on sort un peu la tête de l’eau et on commence à voir des campagnes de pub, des communiqués et des études sur les malfaits de ces pratiques extrêmes.'
+        },
+        {
+          type: 'p',
+          text: 'Mais aussi, on a bien plus accès à des explications et des spécialistes pour nous aiguiller sur la meilleure chose à faire, comment le faire, en fonction de soi, et pas des vieilles injonctions.'
+        },
+        {
+          type: 'p',
+          text: 'Donc, enterrons une bonne fois pour toutes, et bien profondément, ces idées arriérées tirées tout droit d’Alerte à Malibu, et revenons dans la vraie vie.'
+        },
+
+        { type: 'h2', text: 'Le rapport au corps avec la bonne santé' },
+
+        {
+          type: 'p',
+          text: 'On confond souvent le fait d’être mince et / ou musclé avec le fait d’être en parfaite santé. Mais la santé, c’est tellement plus complexe que ça. Certaines personnes sont minces et en mauvaise santé, d’autres sont musclées et en mauvaise santé également.'
+        },
+        { type: 'p', text: 'Le physique est loin d’être le tout premier facteur. Et je ne parle même pas de la santé mentale qui, elle, s’en fout complètement de ton physique.' },
+        { type: 'p', text: 'Prendre soin de son corps et de sa santé par la même occasion ne veut pas dire qu’il faut à tout prix ressembler aux influenceurs sportifs ou faire “cette taille parfaite”.' },
+        { type: 'p', text: 'Qui sait ? Malgré leur physique, certains se battent peut-être contre des maladies.' },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Il serait intéressant de ne pas confondre l’activité physique et une bonne alimentation équilibrée pour être en bonne santé, avec du sport à outrance et un régime strict pour rentrer dans un idéal ou pour (se) plaire physiquement.'
+        },
+
+        { type: 'h2', text: 'Le gras sur le ventre' },
+
+        {
+          type: 'p',
+          text: 'Sociétalement, il est préférable et plus esthétique pour un corps humain, femme ou homme, d’avoir un ventre plat, voire même les abdos apparents. Pourtant, quand on lit à quoi sert cette couche de tissu adipeux (je te mets le lien dans les utiles si ça t’intéresse), on peut voir que sa fonction principale est non seulement de stocker l\'énergie et la chaleur, mais aussi de protéger les organes internes.'
+        },
+        { type: 'p', text: 'Donc non, ce n’est pas juste une honte à effacer à tout prix.' },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'En sachant cela, pourquoi continuons-nous à vouloir à tout prix éliminer ces “défauts” si ce n’est pour coller aux corps retouchés ou ultra-musclés des pubs et des affiches ? Puisque même d’un point de vue santé, rien ne tend vers des abdominaux saillants.'
+        },
+
+        {
+          type: 'p',
+          text: 'Faire des séances de sport focalisées sur les abdominaux, si elles sont mal effectuées et trop intensives, peut avoir des conséquences catastrophiques. Descente d’organes, fuites urinaires…'
+        },
+        { type: 'p', text: 'On force n’importe comment et on fragilise notre périnée, impactant tous les corps, quel que soit le genre.' },
+        { type: 'p', text: '(Je te mets un lien parmi tant d’autres dans les utiles sur les méfaits d’exercices trop forts ciblés abdos.)' },
+        { type: 'p', text: 'Des exercices pour renforcer sa sangle abdominale doivent être bien effectués, sous les conseils et la supervision d’un bon coach.' },
+
+        { type: 'h2', text: 'Les complexes “à vie”' },
+
+        { type: 'p', text: 'Parfois, on peut avoir l’impression que pour être plus heureux, on devrait mincir, par exemple.' },
+        { type: 'p', text: 'On se met au sport, on fait plus attention à ce que l’on mange et puis on mincit, on perd 5 kilos. Chouette !' },
+        { type: 'p', text: 'Sauf que notre regard, lui, ne change pas beaucoup.' },
+        { type: 'p', text: 'On ne se trouve pas “encore assez”.' },
+        {
+          type: 'p',
+          text: 'Comme une route infernale dans laquelle il n’y a aucune ligne d’arrivée. Et cela est principalement dû à l’éternelle comparaison et au fait que nous avons du mal à comprendre que nous avons tous une morphologie différente.'
+        },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Si ces injonctions existent depuis si longtemps, malgré nos corps tous différents et nos métabolismes uniques (tournés sous forme d’injustice), pourquoi on n’a pas encore collectivement changé de regard, alors que ça abîme autant de monde ?'
+        },
+
+        { type: 'h3', text: 'Petit racontage de life, en guise d’exemple.' },
+        { type: 'p', text: 'Toute ma vie, du plus loin que je me souviennne, on m’a répété de ne surtout pas grossir, de ne surtout pas me laisser aller, de toujours faire attention, de diaboliser le poids et le chiffre sur la balance et de me fixer une limite à ne jamais franchir.' },
+        { type: 'p', text: 'Coucou, les TCA !' },
+        { type: 'p', text: 'Quand j’étais ado, j’ai toujours rêvé de faire une taille 36 car à cette époque, c’était considéré comme la taille “idéale”.' },
+        { type: 'p', text: 'J’ai perdu du poids pour y arriver, me créant un peu plus de TCA au passage.' },
+        { type: 'p', text: 'Mais même en 36, les pantalons étaient trop larges aux jambes, trop serrés au bouton, bref : mes hanches sont trop larges.' },
+        { type: 'p', text: 'J’ai complexé, fort. Je me suis restreinte, encore plus. Je suis tombée dans la sous-nutrition.' },
+        { type: 'p', text: 'Et là, plot twist : on se moque parce que mes pantalons baillent aux fesses et aux jambes. On rit de moi parce qu’on dirait que, je cite, je me suis "chier dessus".' },
+        { type: 'p', text: 'Mes hanches ? Toujours là, fidèles au poste. Le seul moyen de les rétrécir serait de me poncer les os.' },
+        {
+          type: 'p',
+          text: 'Et puis un jour, une fois adulte, une collègue de travail m’explique qu’elle n’arrive pas à prendre de poids et qu’elle est obligée de prendre des ceintures dans les rayons enfants car sinon, elle perd ses pantalons.'
+        },
+        { type: 'p', text: 'Je regarde mes hanches… et je me dis que je peux peut-être négocier un traité de paix.' },
+
+        { type: 'h2', text: 'Le concept de la perception' },
+
+        { type: 'p', text: 'C’est un exercice qui m’a été recommandé par mon psy contre ma dépression et que je trouve intéressant de transposer ici.' },
+        { type: 'quote', text: 'Est-il possible de changer la perception que l’on a de son propre corps ?' },
+        { type: 'quote', text: 'Et si on dézoomait un peu le problème, pour voir ?' },
+
+        { type: 'p', text: 'À proprement parler, un corps est constitué, entre autres, de chair pour nous protéger, de muscles pour nous permettre de bouger…' },
+        { type: 'p', text: 'Au mieux, et si l’on a de la chance, nous avons 2 bras, 2 jambes, 2 yeux…' },
+        {
+          type: 'p',
+          text: 'Encore mieux, si l’on peut se le permettre, nous pouvons marcher, dormir, nager, sauter, rire, danser, courir, faire l’amour. Mais aussi toucher, voir, sentir…'
+        },
+
+        { type: 'p', text: 'C’est plutôt une bonne machine quand on y pense. Parfois avec quelques petits bugs, parfois un peu rouillée, mais quand même.' },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Allons piocher dans ces exemples. Désormais, tu te lèves le matin et il te manque une jambe. Ou bien, tu es touché par une cécité soudaine. Ou encore, une maladie quelconque ne te permet plus de marcher. Demande-toi honnêtement : est-ce que tu serais encore impacté de la même manière sur ton physique ? En aurais-tu encore quelque chose à faire de la cellulite sur tes cuisses, ta petite taille, ton nez trop grand, tes cheveux trop lisses et tes poignées d’amour que tu n’arrives pas à perdre même en tenant 2 minutes en planche latérale ?'
+        },
+
+        {
+          type: 'p',
+          text: 'Je suis tombé récemment sur un reel Instagram d’un jeune homme super dynamique et souriant qui se troll tout seul en se filmant pour donner des conseils sur comment perdre du poids comme lui.'
+        },
+        { type: 'quote', text: '1 : ne mange plus qu\'à la moitié de ton assiette comme moi, tu vas fondre à vue d’œil.\n2 : fais de la chimio.\n3 : chope un cancer comme moi.' },
+        {
+          type: 'p',
+          text: 'Avant d’être malade, ce type était coach sportif.'
+        },
+        {
+          type: 'p',
+          text: 'Il avait un physique ultra développé, et aujourd’hui il fait 47 kilos.'
+        },
+        {
+          type: 'p',
+          text: 'Humour noir, oui. Mais le message est limpide : on oublie vite que le but du corps, ce n’est pas d’être parfait. C’est d’être vivant.'
+        },
+
+        { type: 'h2', text: 'Vieillir' },
+
+        {
+          type: 'p',
+          text: 'Les rides, les cheveux blancs ou leur chute, la prise de poids, les taches sur la peau… Personne n’y échappe vraiment. Et ça a tendance à accentuer encore plus nos complexes physiques. Nous le savons, nous le voyons sur les personnes de notre famille qui prennent de l’âge, et pourtant, quand vient notre tour, nous avons souvent tendance à mal l’accepter.'
+        },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Pourquoi rester bloqué sur les signes de vieillesse alors que nous avons conscience depuis tout jeune que c’est 100% naturel ? Est-ce que ce serait encore une forme d’influence extérieure que nous subissons, entendant à tous bout de champ que vieillir c’est nul, c’est moche, et c’est pas attirant ?'
+        },
+
+        { type: 'h2', text: 'Là où ça devient problématique' },
+
+        { type: 'p', text: 'Quand un complexe dicte ton quotidien, on n’est plus dans “un petit truc que je n’aime pas”. On est dans une prison.' },
+        { type: 'p', text: 'Ça peut aller de petits gestes, comme :' },
+        {
+          type: 'ul',
+          items: [
+            'garder le ventre rentré quand on sort,',
+            'se mettre sur la pointe des pieds dans le bus pour ne pas que nos cuisses s’aplatissent,',
+            'faire attention à l’angle de la photo pour ne pas voir ses imperfections,',
+            'mettre beaucoup de fond de teint pour cacher ses signes de vieillesse…',
+          ]
+        },
+
+        { type: 'p', text: 'Mais aussi des actions plus importantes, comme :' },
+        {
+          type: 'ul',
+          items: [
+            's\'empêcher d’aller à la mer ou à la piscine (53% des Français dont 67% des femmes sont mal à l’aise en maillot de bain, selon l’étude de l’IFOP en 2023),',
+            's’interdire de profiter d’un restaurant ou d’un événement,',
+            'ne s’habiller qu\'avec des vêtements amples,',
+            'porter une casquette ou un bonnet été comme hiver,',
+            'fuir son reflet dans tous les supports…',
+          ]
+        },
+
+        { type: 'p', text: 'Les complexes physiques peuvent laisser un sentiment amer et nous rendre aigri. On se compare, on a l’impression que les gens autour de nous sont mieux.' },
+        { type: 'p', text: 'Et certains peuvent le vivre comme un sentiment d’échec.' },
+        { type: 'p', text: 'Ça peut impacter aussi directement la sexualité et le rapport au corps et à la nudité face à l’autre, avec la peur d’être moqué.' },
+        { type: 'p', text: 'Ce qui est paradoxal, c’est que bien souvent, quand on regarde quelqu’un de plus gros que soi, de plus dégarni, de plus petit, on peut parfaitement le trouver beau.' },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Pourquoi on y arrive pour les autres, et pas pour nous ?'
+        },
+
+        { type: 'h2', text: 'La taille du sexe masculin / des seins' },
+
+        { type: 'p', text: 'Oui, c’est encore un sujet, et ça me sidère.' },
+        { type: 'p', text: 'Comparer la masculinité à une taille, ou réduire la féminité à un bonnet, en 2025… c’est violent et effrayant.' },
+        {
+          type: 'p',
+          text: 'Et les dégâts que cela génère sont encore tellement présents, tellement importants : ados terrorisés, sexualité sabotée, peur du jugement, de la moquerie, peur de se déshabiller.'
+        },
+        { type: 'p', text: 'Y’a que moi que ça révolte ?' },
+
+        { type: 'p', text: 'Bonne nouvelle : de plus en plus de voix cassent ces normes absurdes et arriérées.' },
+        {
+          type: 'p',
+          text: 'Qu\'une grosse poitrine qui a telle forme et une grande verge qui a telle forme ne sont pas l’unique symbole de désir et de sexualité comme de la beauté.'
+        },
+        {
+          type: 'p',
+          text: 'Qu\'il n’y a pas de “normes” parfaites et ce, quel que soit la partie de son corps. Et que tout le monde s’en carre royalement de savoir que tu rentres dans la moyenne européenne.'
+        },
+
+        { type: 'h2', text: 'La perfection n’existe pas' },
+
+        { type: 'p', text: 'Et c’est très bateau comme façon de penser. Ce genre de phrases toutes faites a du mal à résonner quand le complexe est bien ancré depuis des années. Et j’en sais quelque chose.' },
+
+        {
+          type: 'p',
+          text: 'Chacun a ses préférences, et comme dit plus haut, c’est très souvent influencé par les normes sociales, anciennes ou récentes. Mais ce qu’on peut considérer comme des “défauts” chez nous est peut-être l’idéal d’autres personnes, ce qui peut nous rendre beaux, attirants ou uniques à leurs yeux.'
+        },
+
+        { type: 'p', text: 'Cela peut être très rapidement prouvé rien qu’en demandant à un petit groupe de personnes d’expliquer son conjoint(e) idéal(e).' },
+        {
+          type: 'p',
+          text: 'Certaines vont préférer des âges avancés, d’autres plus jeunes, des poitrines importantes, des barbes imposantes, un petit ventre, des bras musclés, une certaine couleur d’yeux, de cheveux ou de peau, une ethnie bien précise, pas trop grand(e), les cheveux courts... Certains vont s’attarder sur les jolies mains, d’autres sur le sourire…'
+        },
+
+        {
+          type: 'callout',
+          title: 'Piste de réflexion',
+          text: 'Toi aussi, tu as ces idéaux. C’est normal, c’est humain. Est-ce que pour autant tu trouves ceux / celles qui sortent du lot repoussants ?'
+        },
+
+        {
+          type: 'p',
+          text: 'Cela prouve bien que même dans nos propres choix, nous n’avons pas de réelles préférences étriquées et strictes. Il y a autant de caractéristiques chez une personne que de gens qui vont les trouver intéressants ou attirants.'
+        },
+
+        { type: 'h2', text: 'Courons plutôt après le temps ?' },
+
+        { type: 'p', text: 'Je ne te dis pas : “Ne change rien.”' },
+        { type: 'p', text: 'Si tu veux évoluer, te sentir mieux, te renforcer, prendre soin de toi, de manière saine et durable : c’est ok.' },
+        { type: 'p', text: 'Mais passer la seule notion vraiment précieuse, le temps, à se rabâcher sans cesse ses complexes, c’est tout de même une triste façon de le perdre.' },
+
+        { type: 'p', text: 'Alors :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 À nous qui rentrons le ventre dans la rue : ' },
+            { type: 'text', text: 'et si on regardait le ciel 10 secondes ?' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 À nous qui prenons 30 minutes pour une photo “acceptable” : ' },
+            { type: 'text', text: 'et si on prenait la photo, puis on vivait le moment ?' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 À nous qui voulons annuler le resto : ' },
+            { type: 'text', text: 'faisons-le, kiffons-le. On verra demain.' }
+          ]
+        },
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: '🔸 À nous qui nous démontons devant le miroir : ' },
+            { type: 'text', text: 'remercions notre corps d’être debout. Habillons-nous. Et on enchaîne.' }
+          ]
+        },
+
+        {
+          type: 'p',
+          text: 'Quand les complexes sont trop forts, on est capable de modeler complètement sa vie en fonction de ça. Mais on oublie aussi que le temps passé à se soucier de son physique qui n’est pas “parfait”, c’est du temps précieux perdu.'
+        },
+
+        { type: 'h2', text: 'Quelques pistes d’améliorations' },
+
+        {
+          type: 'p',
+          text: 'Aujourd’hui, et encore heureux, on commence à voir du changement dans cette vision surréaliste du corps parfait.'
+        },
+        {
+          type: 'p',
+          text: 'De nombreuses marques modifient complètement leurs standards pour apporter des physiques dits “normaux”, voire même certains handicaps, et cela aide quand même beaucoup à casser cette image encore trop présente du : pour être beau / belle et attirant(e), il faut être comme ça.'
+        },
+
+        { type: 'p', text: 'Parce que ça va bien 5 minutes :' },
+
+        {
+          type: 'ul',
+          items: [
+            'les pubs pour des crèmes anti-rides sur des nanas de 20 ans,',
+            'les affiches de vêtements en tout genre sur des profils uniquement skinny ou musclés,',
+            'les ventes de machines qui rasent des visages masculins sans barbe ou des jambes sans poils,',
+            'des annonces de shampoings anti-chute sur des tignasses…',
+          ]
+        },
+
+        {
+          type: 'p',
+          text: 'Certaines stars commencent d’ailleurs à s’afficher avec des cheveux gris, sans maquillage, des corps curvy, du vitiligo, des rides mais aussi des looks décalés ou androgynes complètement assumés.'
+        },
+        {
+          type: 'p',
+          text: 'Même si rien n’est encore gagné et que nous sommes encore tous impactés par ces idéaux anxiogènes, espérons que les tendances continuent de tourner vers du “normal”.'
+        },
+
+        { type: 'h2', text: 'Conclusion' },
+
+        { type: 'p', text: 'On nous a appris à traiter notre corps comme un projet à corriger : trop de ceci, pas assez de cela.' },
+        { type: 'p', text: 'Comme si la vie commençait “quand on sera enfin parfait”. Définissons parfait ?' },
+
+        { type: 'p', text: 'Il y aura toujours un ventre à lisser, une ride à gommer, du gris à teindre, un détail à “améliorer”, une comparaison à perdre.' },
+
+        { type: 'p', text: 'La vraie question, ce n’est pas : “Comment faire pour aimer chaque centimètre de moi ?”' },
+        { type: 'p', text: 'Ce serait plus un truc du genre : “Combien de jours je suis prêt(e) à sacrifier à me détester, au lieu de vivre ?”' },
+
+        { type: 'p', text: 'Notre corps, ce n’est pas notre ennemi.' },
+        { type: 'p', text: 'C’est notre véhicule. Notre outil. Notre maison.' },
+        { type: 'p', text: 'C’est ce qui nous permet de se créer la seule chose qui reste vraiment : les souvenirs.' },
+
+        { type: 'p', text: 'Et même si on ne l\'aime pas tous les jours — même si on le trouve imparfait — essayons au moins de faire la paix avec lui assez longtemps pour ne pas rater trop de moments.' },
+
+        { type: 'p', text: 'Parce qu’au fond : on n’a pas une autre vie pour attendre d’avoir un autre corps.' },
+      ],
+    },
 
 
   ];
