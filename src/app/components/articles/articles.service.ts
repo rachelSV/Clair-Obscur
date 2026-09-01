@@ -1689,5 +1689,780 @@ export class ArticlesService {
     },
 
 
+    {
+      id: 'a7',
+      title: 'La douleur chronique, ou l\'art de vivre avec ce petit truc en plus',
+      description: 'Vivre avec une douleur chronique, ce n’est pas seulement avoir mal : c’est apprendre à composer avec tout ce qui vient progressivement s’installer autour.',
+      tags: ['douleur chronique', 'santé', 'quotidien', 'errance médicale', 'témoignage'],
+      createdAt: new Date('2026-09-01'),
+      author: 'Elijah',
+      readTime: '12 min',
+      cover: 'assets/images/articles/douleur-chronique.webp',
+      links: [
+        { label: 'Centre de la douleur - CHU de Toulouse', url: 'https://www.chu-toulouse.fr/evaluation-et-traitement-de-la-douleur-chronique-chez-l-adulte' },
+        { label: 'Dispositif "Mon soutien psy" - remboursement séances', url: 'https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy' },
+        { label: 'MindDay - application d\'auto-thérapie', url: 'https://www.mindday.com/' },
+      ],
+
+      blocks: [
+
+        { type: 'p', text: 'Ça fait 4000 ans que je n\'ai pas écrit.' },
+
+        { type: 'p', text: 'C\'est con, parce que dans ma to-do list du début de l\'année, j\'avais écrit que je voulais publier un article de blog par mois. J\'avais des sujets, des idées, des bouts de phrases qui traînaient quelque part dans ma tête et probablement trois notes commencées dans mon téléphone.' },
+
+        { type: 'p', text: 'Mais les douleurs ont eu raison de ma plume.' },
+
+        { type: 'p', text: 'Ironique, finalement, que ce soit justement elles qui me donnent aujourd\'hui envie de la reprendre.' },
+
+        { type: 'p', text: 'Sur le site du CHU de Toulouse, on parle de douleur chronique lorsqu\'une douleur persiste ou se répète au-delà de trois mois. Moi, ça fait un peu plus de trois ans.' },
+
+        { type: 'p', text: 'Alors avec mon médecin, on s\'est dit qu\'on allait peut-être commencer à dire les termes.' },
+
+        { type: 'p', text: 'Je ne connais pas la liste immensément longue de tout ce qui peut entrer dans la catégorie des douleurs chroniques. Donc je vais forcément parler des miennes, parce que ce sont les seules que je connaisse vraiment : celles que je trimballe avec moi, celles qui ont progressivement modifié mon quotidien et celles pour lesquelles, trois ans plus tard, je n\'ai toujours pas vraiment de nom.' },
+
+        { type: 'p', text: 'Mais finalement, cet article ne parle même pas tellement de maladie.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Il parle de ' },
+            { type: 'strong', text: 'tout ce qui vient s\'installer autour.' }
+          ]
+        },
+
+        // ─────────────────────────────────────────────
+        // LE JOUR OÙ LA DOULEUR COMMENCE À PRENDRE DE LA PLACE
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Le jour où la douleur commence à prendre de la place' },
+
+        { type: 'p', text: 'L\'idée de cet article m\'est revenue récemment en remplissant mon dossier pour le centre de la douleur, après plus de trois années d\'errance médicale.' },
+
+        { type: 'p', text: 'Ça faisait longtemps que j\'avais envie d\'écrire là-dessus. Mais rien n\'arrive jamais vraiment par hasard et, quelque part, je pense que ce n\'était pas encore le moment.' },
+
+        { type: 'p', text: 'Mes petits démons diraient surtout que je n\'avais peut-être pas encore suffisamment touché le fond pour me sentir légitime d\'en parler.' },
+
+        { type: 'p', text: 'Parce qu\'il y aura toujours pire.' },
+
+        { type: 'p', text: 'Quelqu\'un qui souffre davantage. Quelqu\'un dont la maladie est plus grave. Quelqu\'un qui ne peut plus travailler, plus sortir, plus marcher. Quelqu\'un qui vit quotidiennement avec un 8/10 quand vous avez encore la chance d\'avoir des journées à 3.' },
+
+        { type: 'p', text: 'Et cette comparaison permanente finit par créer une drôle de culpabilité : celle de se demander si on a vraiment le droit de se plaindre.' },
+
+        { type: 'p', text: 'Sauf qu\'à partir de combien sur l\'échelle de la souffrance est-ce qu\'on obtient officiellement notre permis de pétage de câble ?' },
+
+        { type: 'p', text: 'Parce que les miens, justement, sont de plus en plus récurrents.' },
+
+        { type: 'p', text: 'Et si ça se passe comme ça pour moi, je me doute que quelque part, quelqu\'un vit probablement quelque chose qui y ressemble. Peu importe sa maladie, son diagnostic, l\'endroit où il a mal ou le niveau de sa douleur.' },
+
+        { type: 'p', text: 'Alors peut-être qu\'en lisant ça, certaines personnes réussiront au moins à déculpabiliser un peu de tout ce qu\'elles ont dû modifier, annuler, abandonner ou adapter pour continuer à avancer.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Et peut-être aussi que certaines personnes qui vivent ' },
+            { type: 'strong', text: 'avec' },
+            { type: 'text', text: ' quelqu\'un qui souffre comprendront un peu mieux ce fameux petit truc en plus qui s\'est invité dans leur quotidien à elles aussi.' }
+          ]
+        },
+
+        { type: 'p', text: 'Parce que oui : malheureusement, la douleur chronique ne touche jamais seulement la personne qui a mal.' },
+
+        // ─────────────────────────────────────────────
+        // LA DOULEUR S'INVITE DANS LE COUPLE
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'La douleur s\'invite dans le couple, la famille et les amis' },
+
+        { type: 'p', text: 'Les conjoint(e)s, la famille, les amis et parfois même les collègues vivent forcément une petite partie de cette douleur avec nous — du moins lorsqu\'ils ont suffisamment d\'empathie pour ne pas s\'en foutre royalement.' },
+
+        { type: 'p', text: 'Et eux aussi doivent apprendre à composer avec.' },
+
+        { type: 'p', text: 'Pour ma part, je sais qu\'au bout de toutes ces années, mon partenaire pense désormais lui aussi à tout un tas de situations qui gravitent autour de mes douleurs, même lorsque j\'essaye de lui en épargner la majeure partie.' },
+
+        { type: 'p', text: 'Il sait que certaines choses peuvent me faire mal. Que certains plans peuvent changer. Que parfois je vais dire oui à quelque chose le matin et ne plus pouvoir le faire le soir.' },
+
+        { type: 'p', text: 'Il y pense parce que ça fait désormais partie de notre quotidien.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: 'Et j’ai la chance d’avoir deux amis qui vivent notre amitié de la même manière, en étant très aidants et bienveillants. Merci à eux.' }
+          ]
+        },
+
+        { type: 'p', text: 'Partager sa vie avec quelqu\'un est déjà suffisamment compliqué comme ça. Alors quand il faut rajouter par-dessus une maladie, des douleurs, de la fatigue, des traitements, des rendez-vous médicaux, des annulations et parfois une intimité complètement chamboulée, forcément, ça peut faire trembler un couple des genoux.' },
+
+        { type: 'p', text: 'Je n\'ai absolument aucune solution miracle à proposer sur ce point.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'J\'ai seulement une conviction personnelle : si la personne qui partage ma vie n\'est pas capable d\'un minimum d\'empathie, d\'aide et de bienveillance ' },
+            { type: 'strong', text: 'sans me faire sentir que ma douleur l\'emmerde' },
+            { type: 'text', text: ', je préfère encore souffrir seule.' }
+          ]
+        },
+
+        { type: 'p', text: 'Parce que c’est déjà suffisamment épuisant.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Je refuse d\'avoir, en plus, l\'impression de casser les couilles à quelqu\'un comme si j\'avais choisi cette situation et que je me réveillais chaque matin en me disant : ' },
+            { type: 'em', text: 'tiens, qu\'est-ce que je pourrais bien faire aujourd\'hui pour compliquer la vie de tout le monde ?' }
+          ]
+        },
+
+        { type: 'p', text: 'Et ça vaut aussi pour les autres relations.' },
+
+        { type: 'p', text: 'Devoir annuler au dernier moment parce qu\'une crise inflammatoire vient de démarrer.' },
+
+        { type: 'p', text: 'Ne pas pouvoir conduire pendant l\'essai d\'un traitement plus fort qu\'un gros pétard.' },
+
+        { type: 'p', text: 'N\'avoir rien dormi la veille et piquer du nez à 20 heures.' },
+
+        { type: 'p', text: 'Choisir entre gérer sa douleur et répondre aux quinze messages qui attendent depuis trois jours.' },
+
+        { type: 'p', text: 'Ne plus pouvoir avoir de relations intimes pendant de longues périodes lorsque les symptômes se réveillent.' },
+
+        { type: 'p', text: 'Ne plus réussir à faire de sorties pendant plusieurs semaines.' },
+
+        { type: 'p', text: 'Parfois disparaître un peu.' },
+
+        { type: 'p', text: 'Et vous savez quoi ?' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'C\'est comme ça.' }
+          ]
+        },
+
+        { type: 'p', text: 'Je me suis souvent surprise à culpabiliser. À me demander si je ne pourrais pas quand même faire un petit effort.' },
+
+        { type: 'p', text: 'Mais bordel, sous quel prétexte ?' },
+
+        { type: 'p', text: 'C\'est nous qui avons mal.' },
+
+        { type: 'p', text: 'On peut être reconnaissant envers ceux qui nous accompagnent. On peut essayer de communiquer, de préserver les autres, de ne pas transformer chaque conversation en bulletin médical.' },
+
+        { type: 'p', text: 'Mais on n\'a pas à s\'excuser continuellement d\'avoir un corps qui nous impose des limites qu\'on n\'a jamais demandées.' },
+
+        // ─────────────────────────────────────────────
+        // CE PETIT TRUC EN PLUS
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Ce petit truc en plus' },
+
+        { type: 'p', text: 'Je crois que c\'est probablement la chose la plus difficile à expliquer à quelqu\'un qui n\'a jamais souffert de manière chronique.' },
+
+        { type: 'p', text: 'Parce qu\'avoir mal ponctuellement et vivre avec une douleur chronique sont deux expériences complètement différentes.' },
+
+        { type: 'p', text: 'Une douleur ponctuelle arrive, prend de la place, puis disparaît.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Une douleur chronique, elle, ' },
+            { type: 'strong', text: 's\'installe.' }
+          ]
+        },
+
+        { type: 'p', text: 'Elle devient ce petit truc en plus.' },
+
+        { type: 'p', text: 'Ce truc qui est là lorsque vous travaillez.' },
+
+        { type: 'p', text: 'Lorsque vous rigolez.' },
+
+        { type: 'p', text: 'Lorsque vous faites vos courses.' },
+
+        { type: 'p', text: 'Lorsque vous buvez un verre.' },
+
+        { type: 'p', text: 'Lorsque vous regardez un film.' },
+
+        { type: 'p', text: 'Lorsque vous faites l\'amour.' },
+
+        { type: 'p', text: 'Lorsque vous essayez simplement de vous asseoir tranquillement sur votre canapé sans demander l\'autorisation préalable à votre propre corps.' },
+
+        { type: 'p', text: 'Parce que la douleur chronique finit par grignoter une chose essentielle à notre quotidien : notre système nerveux.' },
+
+        { type: 'p', text: 'Jour après jour, semaine après semaine, mois après mois, année après année, il encaisse.' },
+
+        { type: 'p', text: 'Avoir mal de manière chronique, c\'est avoir presque constamment quelque part cette douleur de fond, tapie dans l\'ombre du corps, cachée derrière un os, vibrant sous un organe.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'C\'est continuer à vivre comme les autres, mais ' },
+            { type: 'strong', text: 'avec ce petit truc en plus.' }
+          ]
+        },
+
+        { type: 'p', text: 'Cette tension presque imperceptible.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Cette petite goutte de sueur au coin de la tempe qui te rappelle que tu ' },
+            { type: 'em', text: 'essayes' },
+            { type: 'text', text: ' de faire comme tout le monde.' }
+          ]
+        },
+
+        { type: 'p', text: 'Parce qu\'elle est là.' },
+
+        { type: 'p', text: 'Derrière tes rires.' },
+
+        { type: 'p', text: 'Derrière ton verre.' },
+
+        { type: 'p', text: 'Derrière ton attention.' },
+
+        { type: 'p', text: 'Même lorsqu\'un traitement la calme. Même lorsque, par miracle, tu arrives à la faire descendre suffisamment pour presque l\'oublier. Même lorsque certaines pratiques t\'aident ponctuellement à la gérer.' },
+
+        { type: 'p', text: 'Et parfois, elle est tellement discrète que tu pourrais presque croire qu\'elle est partie.' },
+
+        { type: 'p', text: 'Jusqu\'à ce que tu penses à elle.' },
+
+        { type: 'p', text: 'Et là :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: 'Ah ouais.' }
+          ]
+        },
+
+        { type: 'p', text: 'Elle est toujours là.' },
+
+        // ─────────────────────────────────────────────
+        // EST-CE QUE ÇA VA ME FAIRE MAL ?
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: '« Est-ce que ça va me faire mal ? »' },
+
+        { type: 'p', text: 'À force, quelque chose d\'autre apparaît.' },
+
+        { type: 'p', text: 'L\'anticipation.' },
+
+        { type: 'p', text: 'Et celle-là est particulièrement vicieuse parce qu\'elle finit par s\'infiltrer dans des décisions tellement insignifiantes qu\'on ne remarque même plus qu\'on les prend en fonction de la douleur.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Imagine que des dizaines de décisions parfaitement banales de ta journée passent désormais par un seul filtre : est-ce que ça va me faire mal ?' }
+          ]
+        },
+
+        { type: 'p', text: 'Pour certains, ce sera utiliser leurs articulations.' },
+
+        { type: 'p', text: 'Pour d\'autres, rester longtemps debout.' },
+
+        { type: 'p', text: 'Marcher.' },
+
+        { type: 'p', text: 'Manger quelque chose de solide.' },
+
+        { type: 'p', text: 'Monter des escaliers.' },
+
+        { type: 'p', text: 'Dormir dans une certaine position.' },
+
+        { type: 'p', text: 'Pour ma part, aujourd\'hui, c\'est rester assise, pratiquer certaines activités sportives, avoir des relations sexuelles, vider ma vessie ou porter des vêtements trop serrés en bas.' },
+
+        { type: 'p', text: 'Et quand on met tous ces petits trucs bout à bout, on comprend à quel point une douleur peut prendre de la place sans même être à son maximum.' },
+
+        { type: 'p', text: 'Parce qu\'aller pisser n\'est plus seulement aller pisser lorsque tu sais qu\'une fois sur deux, tu risques de douiller après.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Choisir un pantalon n\'est plus seulement choisir un pantalon lorsque tu as oublié de faire une lessive et qu\'il ne te reste plus que ' },
+            { type: 'strong', text: 'CE PUTAIN DE JEAN SLIM sans élasthanne' },
+            { type: 'text', text: ' que tu sais déjà que tu vas devoir supporter toute la journée.' }
+          ]
+        },
+
+        { type: 'p', text: 'Prendre une décision banale ne l’est plus lorsque tu sais qu\'au dernier moment ton corps peut décider, sans raison apparente :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: 'Ah non. Pas aujourd\'hui.' }
+          ]
+        },
+
+        { type: 'p', text: 'Faire du sport n\'est plus seulement enfiler ses baskets et partir.' },
+
+        { type: 'p', text: 'S\'asseoir n\'est plus seulement s\'asseoir.' },
+
+        { type: 'p', text: 'Se coucher n’est plus sans risque d’insomnie forcée.' },
+
+        { type: 'p', text: 'Petit à petit, des dizaines de choses qui étaient auparavant parfaitement automatiques demandent une réflexion supplémentaire.' },
+
+        { type: 'p', text: 'Et chacune, individuellement, semble ridicule.' },
+
+        { type: 'p', text: 'Mais accumulez-en cinquante dans une journée.' },
+
+        { type: 'p', text: 'Puis recommencez demain.' },
+
+        { type: 'p', text: 'Puis après-demain.' },
+
+        { type: 'p', text: 'Puis pendant trois ans.' },
+
+        { type: 'p', text: 'C\'est là que le « petit truc en plus » commence à devenir sacrément lourd.' },
+
+        // ─────────────────────────────────────────────
+        // LA VIE ET SON HUMOUR DE MERDE
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'La vie et son humour de merde' },
+
+        { type: 'p', text: 'Parce que, quitte à faire les choses bien, l\'univers a réussi à me retirer - ou compliquer - à peu près tout ce que j\'aimais le plus dans la vie :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Glander.' },
+            { type: 'br' },
+            { type: 'strong', text: 'Le sexe.' },
+            { type: 'br' },
+            { type: 'strong', text: 'Et le sport.' }
+          ]
+        },
+
+        { type: 'p', text: 'Franchement, beau triplé.' },
+
+        { type: 'p', text: 'Bon, arrêter de mettre mes anciens jeans, ça, ça va. A part un coup dans le portefeuille pour tout racheter 2 tailles au-dessus en coupe baggy, c’est encore gérable.' },
+
+        { type: 'p', text: 'Je ne vais pas trop le dire fort quand même, au cas où il déciderait de rajouter une petite nouveauté pour pimenter mon challenge.' },
+
+        { type: 'p', text: 'Mais le sport, lui, m\'a fait beaucoup plus mal.' },
+
+        { type: 'p', text: 'Et pas seulement physiquement.' },
+
+        // ─────────────────────────────────────────────
+        // REGARDER SON CORPS CHANGER
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Regarder son corps changer pendant qu\'on essaye déjà de tenir' },
+
+        { type: 'p', text: 'J\'ai pris du poids.' },
+
+        { type: 'p', text: 'Et puisque je suis des années 90, j\'ai passé une bonne partie de ma vie à bouffer les injonctions complètement pétées sur ce à quoi quelqu’un était supposé ressembler.' },
+
+        { type: 'p', text: 'Pas trop ci, pas trop ça.' },
+
+        { type: 'p', text: 'Bref : cette magnifique ligne d\'arrivée qui recule à chaque fois qu\'on s\'en approche.' },
+
+        { type: 'p', text: 'J\'ai beau avoir énormément travaillé sur tout ça, j\'ai encore un regard particulièrement critique envers moi-même.' },
+
+        { type: 'p', text: 'Alors voir mon corps changer depuis l\'apparition des douleurs, je pourrais vous dire que je le vis avec une sérénité absolue, que j\'apprends chaque jour à honorer mon corps et à remercier chacune de mes cellules dans la lumière du soleil levant.' },
+
+        { type: 'p', text: 'Mais ce serait du mytho.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Je le vis mal.' }
+          ]
+        },
+
+        { type: 'p', text: 'Parce que je me souviens très bien de la version de moi encore « valide » qui faisait quatre heures de muscu + deux heures de running par semaine et trouvait encore le temps et l\'énergie d\'aller randonner ou faire du vélo le week-end.' },
+
+        { type: 'p', text: 'Aujourd\'hui, certains jours, je monte les escaliers un peu trop vite, je m\'essouffle et j\'ai un vertige.' },
+
+        { type: 'p', text: 'Et parfois, j\'ai honte.' },
+
+        { type: 'p', text: 'Pas vraiment du regard des autres. Celui-là, étonnamment, je m\'en fous de plus en plus.' },
+
+        { type: 'p', text: 'C\'est du mien que j\'ai honte.' },
+
+        { type: 'p', text: 'De la sévérité avec laquelle je regarde ce corps en oubliant complètement ce qu\'il traverse depuis trois ans.' },
+
+        { type: 'p', text: 'Parce que ma morphologie change avec la diminution du sport, évidemment. (Et l’âge, aussi. Mais taggle)' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Mais il y a aussi autre chose dont on parle peut-être moins : ' },
+            { type: 'strong', text: 'le réconfort.' }
+          ]
+        },
+
+        { type: 'p', text: 'Quand beaucoup de passions et d\'activités disparaissent temporairement de votre vie, que votre énergie passe déjà presque entièrement dans le simple fait d\'aller travailler et de fonctionner comme un adulte à peu près opérationnel, il ne reste parfois plus énormément de petits plaisirs facilement accessibles.' },
+
+        { type: 'p', text: 'Et la nourriture en fait partie.' },
+
+        { type: 'p', text: 'Alors oui, j\'ai développé davantage de bouffe émotionnelle.' },
+
+        { type: 'p', text: 'Une partie de moi déteste ce constat.' },
+
+        { type: 'p', text: 'L\'autre considère qu\'avoir chopé à 30 piges une merde invisible que personne n\'arrive à expliquer donne quand même le droit de se noyer dans le chocolat et le pinard.' },
+
+        { type: 'p', text: 'Nous sommes actuellement en négociation.' },
+
+        // ─────────────────────────────────────────────
+        // ET PUIS, FORCÉMENT, IL Y A LE MORAL
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Et puis, forcément, il y a le moral' },
+
+        { type: 'p', text: 'Là, je vais principalement parler à ceux qui connaissent, comme moi, l\'errance médicale.' },
+
+        { type: 'p', text: 'Bien sûr qu\'une maladie ou une douleur chronique touche le mental.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Mais il existe quelque chose de particulièrement violent dans le fait de subir un énième examen — parfois invasif, parfois douloureux, parfois humiliant — et d\'attendre encore une fois qu\'on vous donne enfin ' },
+            { type: 'strong', text: 'une réponse' },
+            { type: 'text', text: '.' }
+          ]
+        },
+
+        { type: 'p', text: 'Puis d\'entendre :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: '« Ce n\'était pas ça. »' }
+          ]
+        },
+
+        { type: 'p', text: 'Encore.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: '« On ne sait toujours pas ce que vous avez. »' }
+          ]
+        },
+
+        { type: 'p', text: 'Encore.' },
+
+        { type: 'p', text: 'Il faut probablement le vivre pour comprendre ce que ça finit par provoquer dans la tête.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Parce qu\'à force, ' },
+            { type: 'strong', text: 'on croit devenir fou.' }
+          ]
+        },
+
+        { type: 'p', text: 'On commence à remettre en question son propre jugement.' },
+
+        { type: 'p', text: 'Sa propre perception.' },
+
+        { type: 'p', text: 'Et parfois presque sa propre douleur.' },
+
+        { type: 'p', text: 'Comment ne pas péter un câble lorsque votre corps vous hurle quotidiennement qu\'il se passe quelque chose et que tous les examens répondent :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: 'RAS.' }
+          ]
+        },
+
+        { type: 'p', text: 'Je ne vais même pas rentrer trop profondément dans le sujet du jugement de certains professionnels de santé qui, parce qu\'ils ne trouvent rien, finissent parfois par dégainer le stress ou le psychologique comme explication universelle.' },
+
+        { type: 'p', text: 'Parce que sinon je vais m\'énerver et cet article est déjà suffisamment long.' },
+
+        { type: 'p', text: 'Mais même lorsque les médecins écoutent.' },
+
+        { type: 'p', text: 'Même lorsqu\'ils vous croient.' },
+
+        { type: 'p', text: 'Même lorsqu\'ils continuent sincèrement à chercher.' },
+
+        { type: 'p', text: 'Parfois, ils ne trouvent rien.' },
+
+        { type: 'p', text: 'Et ça aussi, c\'est extrêmement difficile à encaisser.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Parce qu\'au bout du dixième rendez-vous, du quinzième examen, du huitième spécialiste et du énième ' },
+            { type: 'em', text: '« on va essayer autre chose »' },
+            { type: 'text', text: ', une question finit forcément par apparaître :' }
+          ]
+        },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Comment est-ce qu\'on continue à garder espoir ?' }
+          ]
+        },
+
+        // ─────────────────────────────────────────────
+        // QUAND ON VEUT JUSTE QUE ÇA S'ARRÊTE
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Quand on veut juste que ça s\'arrête' },
+
+        { type: 'p', text: '⚠️ Warning' },
+
+        { type: 'p', text: 'Il y a des choses dont il est difficile de parler ouvertement.' },
+
+        { type: 'p', text: 'Mais puisque cet article parle de la réalité, autant ne pas enlever celle-là.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Pendant certaines crises extrêmement violentes où je peux me retrouver au sol, en larmes, en hyperventilation, à poil, à tester toutes les positions possible, à ingérer tous les anti-douleurs inutiles dans mon périmètre, et en me tapant la tête pour concentrer ma douleur ailleurs, il m\'est déjà arrivé d\'avoir cette pensée brutale : ' },
+            { type: 'em', text: 'se foutre sous un train serait quand même vachement plus rapide que tous ces examens qui vont peut-être encore revenir négatifs.' }
+          ]
+        },
+
+        { type: 'p', text: 'C\'est violent à écrire.' },
+
+        { type: 'p', text: 'Ça l\'est encore davantage à penser.' },
+
+        { type: 'p', text: 'Mais derrière cette phrase, il n\'y a pas nécessairement une envie de mourir.' },
+
+        { type: 'p', text: 'Il y a parfois quelque chose de beaucoup plus primaire :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'je veux juste que ça s\'arrête.' }
+          ]
+        },
+
+        { type: 'p', text: 'Que la douleur s\'arrête.' },
+
+        { type: 'p', text: 'Que la recherche s\'arrête.' },
+
+        { type: 'p', text: 'Que l\'incertitude s\'arrête.' },
+
+        { type: 'p', text: 'Que quelqu\'un trouve enfin quelque chose, mette un putain de nom dessus et dise :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: '« Voilà. C\'est ça. Et maintenant, voilà ce qu\'on va faire. »' }
+          ]
+        },
+
+        { type: 'p', text: 'Lorsque le système nerveux est épuisé, que le corps souffre et que le cerveau ne voit plus la sortie, il peut arriver qu\'il cherche mentalement la plus radicale.' },
+
+        { type: 'p', text: 'Puis la crise redescend.' },
+
+        { type: 'p', text: 'Parfois au bout de quelques heures. Parfois au bout de 2 jours.' },
+
+        { type: 'p', text: 'On respire. On dort. On mange quelque chose. On retrouve un 5.' },
+
+        { type: 'p', text: 'Puis un 3.' },
+
+        { type: 'p', text: 'Et soudain, la vie redevient beaucoup plus grande que la douleur.' },
+
+        { type: 'p', text: 'Je pense que c\'est important de le dire aussi.' },
+
+        { type: 'p', text: 'Parce que ces moments extrêmement noirs ne racontent pas nécessairement toute notre envie de vivre.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Parfois, ils racontent simplement ' },
+            { type: 'strong', text: 'à quel point on est épuisé d\'avoir mal.' }
+          ]
+        },
+
+        // ─────────────────────────────────────────────
+        // ET LA CULPABILITÉ, DANS TOUT ÇA ?
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Et la culpabilité, dans tout ça ?' },
+
+        { type: 'p', text: 'Elle est partout.' },
+
+        { type: 'p', text: 'C\'est peut-être même l\'une des choses que la douleur m\'a le plus sournoisement apportées.' },
+
+        { type: 'p', text: 'Culpabiliser d\'annuler.' },
+
+        { type: 'p', text: 'Culpabiliser de ne pas avoir envie de sortir.' },
+
+        { type: 'p', text: 'Culpabiliser de ne plus pouvoir faire certaines choses avec son partenaire.' },
+
+        { type: 'p', text: 'Culpabiliser de prendre du poids.' },
+
+        { type: 'p', text: 'Culpabiliser de manger pour se réconforter.' },
+
+        { type: 'p', text: 'Culpabiliser de ne pas répondre.' },
+
+        { type: 'p', text: 'Culpabiliser de parler encore de ses symptômes.' },
+
+        { type: 'p', text: 'Culpabiliser d\'être fatiguée.' },
+
+        { type: 'p', text: 'Culpabiliser de ne plus reconnaître la personne qu\'on était avant.' },
+
+        { type: 'p', text: 'Et, apparemment, culpabiliser jusque dans l\'écriture d\'un article sur la douleur chronique parce qu\'une petite voix vous souffle :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: 'Ouais enfin, y\'a quand même des gens qui souffrent beaucoup plus que toi.' }
+          ]
+        },
+
+        { type: 'p', text: 'Oui.' },
+
+        { type: 'p', text: 'Évidemment.' },
+
+        { type: 'p', text: 'Et il y aura toujours quelqu\'un qui souffre davantage.' },
+
+        { type: 'p', text: 'Mais il n\'existe pas de Jeux olympiques de la douleur chronique.' },
+
+        { type: 'p', text: 'Personne ne distribuera de médaille à celui qui aura réussi à fermer sa gueule le plus longtemps.' },
+
+        { type: 'p', text: 'Y’a pas de célébration de l’Oscar de celui qui tanque mieux la douleur que les autres.' },
+
+        { type: 'p', text: 'Alors peut-être qu\'on peut commencer par arrêter de nous demander, à nous-mêmes, d\'être exemplaires dans notre manière de souffrir.' },
+
+        // ─────────────────────────────────────────────
+        // CET ARTICLE NE SERT À RIEN
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Cet article ne sert à rien' },
+
+        { type: 'p', text: 'Concrètement, cet article ne sert peut-être pas à grand-chose. Je n\'ai aucune solution miracle. Aucune explication.' },
+
+        { type: 'p', text: 'Ni pour moi.' },
+
+        { type: 'p', text: 'Ni probablement pour toi qui souffres et qui es tombé sur ces lignes en espérant peut-être reconnaître quelque chose de ton propre quotidien.' },
+
+        { type: 'p', text: 'Je ne sais toujours pas exactement ce que j\'ai.' },
+
+        { type: 'p', text: 'Je ne sais pas quand ça s\'arrêtera.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Je ne sais pas quel rendez-vous sera enfin le bon, quel traitement fonctionnera ou si un jour je pourrai regarder tout ça dans le rétroviseur en me disant :' }
+          ]
+        },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'em', text: 'Putain. Enfin.' }
+          ]
+        },
+
+        { type: 'p', text: 'Mais peut-être que tous les articles n\'ont pas besoin d\'apporter une solution.' },
+
+        { type: 'p', text: 'Peut-être que certains peuvent simplement dire :' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Je sais. Moi aussi.' }
+          ]
+        },
+
+        { type: 'p', text: 'Peut-être que quelqu\'un lira ça après avoir annulé une sortie pour la troisième fois et culpabilisera un tout petit peu moins.' },
+
+        { type: 'p', text: 'Peut-être qu\'un conjoint comprendra pourquoi la personne qu\'il aime est parfois à fleur de peau alors qu\'« aujourd\'hui, pourtant, elle n\'a pas l\'air d\'avoir si mal ».' },
+
+        { type: 'p', text: 'Peut-être qu\'une personne regardera son corps changé par la maladie avec un tout petit peu moins de violence.' },
+
+        { type: 'p', text: 'Ou peut-être que quelqu\'un, pendant une nuit particulièrement merdique, sourira simplement en découvrant qu\'ailleurs, une nana négocie elle aussi quotidiennement avec son corps pour savoir si elle a le droit de mettre un jean.' },
+
+        // ─────────────────────────────────────────────
+        // CONTINUER À CHERCHER DES PETITES PORTES
+        // ─────────────────────────────────────────────
+
+        { type: 'h2', text: 'Continuer à chercher des petites portes' },
+
+        { type: 'p', text: 'Sophrologie.' },
+
+        { type: 'p', text: 'Acupuncture.' },
+
+        { type: 'p', text: 'Magnétiseur.' },
+
+        { type: 'p', text: 'Coupeur de feu.' },
+
+        { type: 'p', text: 'Kiné.' },
+
+        { type: 'p', text: 'Ostéo.' },
+
+        { type: 'p', text: 'Médecine chinoise.' },
+
+        { type: 'p', text: 'Alimentation adaptée.' },
+
+        { type: 'p', text: 'Coach sportif spécialisé.' },
+
+        { type: 'p', text: 'Méditation.' },
+
+        { type: 'p', text: 'Cohérence cardiaque.' },
+
+        { type: 'p', text: 'Etc…' },
+
+        { type: 'p', text: 'La liste est longue.' },
+
+        { type: 'p', text: 'Tout ne fonctionne pas pour tout le monde. Certaines approches disposent de beaucoup plus de preuves que d\'autres. Certaines ne soigneront probablement jamais la cause de notre douleur. Et les pratiques complémentaires n\'ont évidemment pas vocation à remplacer le suivi médical.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Mais lorsqu\'on vit avec une douleur chronique, parfois, on ne cherche même plus uniquement ' },
+            { type: 'strong', text: 'la chose qui va nous guérir.' }
+          ]
+        },
+
+        { type: 'p', text: 'On cherche aussi tout ce qui peut rendre demain légèrement plus supportable.' },
+
+        { type: 'p', text: 'Une séance qui fait descendre la douleur d\'un cran.' },
+
+        { type: 'p', text: 'Une technique qui permet de relâcher un peu le corps.' },
+
+        { type: 'p', text: 'Une activité qu\'on arrive enfin à reprendre.' },
+
+        { type: 'p', text: 'Une personne qui nous écoute.' },
+
+        { type: 'p', text: 'Un traitement qui aide.' },
+
+        { type: 'p', text: 'Une journée pendant laquelle, pour une raison qu\'on ignore, le corps décide enfin de fermer un peu sa gueule.' },
+
+        { type: 'p', text: 'Alors, s’il nous reste un peu d\'énergie, on continue à essayer.' },
+
+        { type: 'p', text: 'On continue à chercher.' },
+
+        { type: 'p', text: 'On ouvre les petites portes en attendant que quelqu\'un trouve peut-être un jour la grande.' },
+
+        { type: 'p', text: 'Et en attendant, vivons à fond ces journées où la douleur décide de rester à 2/10.' },
+
+        { type: 'p', text: 'Essayons de nous rappeler, quand elle monte à 9, que ce n\'est pas nécessairement notre nouvelle éternité.' },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'text', text: 'Et surtout, essayons de ne pas oublier que derrière les rendez-vous, les traitements, les adaptations, les vêtements qu\'on ne peut plus porter, les activités qu\'on a dû abandonner, les plans qu\'on annule et toutes ces décisions qui passent désormais par la question ' },
+            { type: 'em', text: '« est-ce que ça va me faire mal ? »' },
+            { type: 'text', text: '…' }
+          ]
+        },
+
+        {
+          type: 'rich-p',
+          segments: [
+            { type: 'strong', text: 'Il y a toujours notre vie.' }
+          ]
+        },
+
+        { type: 'p', text: 'Une vie un peu différente de celle qu\'on avait prévue.' },
+
+        { type: 'p', text: 'Une vie avec des contraintes dont on se serait franchement bien passé.' },
+
+        { type: 'p', text: 'Une vie avec ce putain de truc en plus.' },
+
+        { type: 'p', text: 'Mais une vie qui mérite encore qu\'on se batte pour qu\'elle soit la plus douce, la plus simple et la plus vivable possible.' },
+
+        { type: 'p', text: 'Pas forcément une vie extraordinaire.' },
+
+        { type: 'p', text: 'Juste pouvoir vivre une journée parfaitement banale sans avoir à demander la permission à notre propre corps.' }
+      ]
+    },
+
+
   ];
 }
